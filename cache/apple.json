@@ -1,0 +1,1037 @@
+{
+  "result": {
+    "gap_score": 3,
+    "verdict": "Likely worth it",
+    "trust_statement": "The claim appears well-supported by the evidence reviewed, with only a small credibility gap. Gap score: 3/10.",
+    "dimension_scores": {
+      "Claim Frequency": 4,
+      "Signal Strength": 4,
+      "Recency": 2,
+      "Severity": 0,
+      "Consistency": 5
+    },
+    "official_claims": [
+      "Official sources for Apple emphasize the value proposition around 'Apple claims the iPhone 16 camera system is the biggest leap in mobile photography ever'.",
+      "Official signal: {\"research_findings\": [{\"title\": \"Apple debuts iPhone 16 Pro and iPhone 16 Pro Max\", \"snippet\": \"Apple introduced the iPhone 16 Pro lineup f.",
+      "Tech marketing language is being compared against off-platform feedback."
+    ],
+    "independent_signals": [
+      "Independent signal: {\"iphone_16_camera_issues\": [{\"title\": \"iPhone 16 camera quality sucks? Am I doing something wrong? - Reddit\", \"snippet\": \"A user reports be.",
+      "Reviews, forums, and blogs are weighted as counter-evidence in the gap score.",
+      "The stronger and more repeated the complaints, the higher the risk score climbs."
+    ],
+    "bullets": [
+      "Compared official messaging and independent reviews for Apple.",
+      "Question tested: Apple claims the iPhone 16 camera system is the biggest leap in mobile photography ever",
+      "Five-dimension average produced a 3/10 gap score."
+    ],
+    "model_note": "OpenAI API unavailable, so GapEngine used a deterministic fallback scorer."
+  },
+  "evidence": {
+    "official_sources": {
+      "label": "Official sources",
+      "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Official sources",
+          "url": "https://duckduckgo.com/?q=%22Apple%22+%22the+iPhone+16+camera+system%22+site%3Aapple.com",
+          "snippet": "{\"research_findings\": [{\"title\": \"Apple debuts iPhone 16 Pro and iPhone 16 Pro Max\", \"snippet\": \"Apple introduced the iPhone 16 Pro lineup featuring \\\"innovative pro camera features,\\\" including a new 48MP Fusion camera with a faster quad-pixel sensor and 4K120 fps video recording in Dolby Vision. Apple claims \\\"the world\\u2019s favorite camera gets even more powerful\\\" with these advancements.\", \"link\": \"https://www.apple.com/newsroom/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/\"},",
+          "source": "Official sources"
+        }
+      ]
+    },
+    "independent_sources": {
+      "label": "Independent sources",
+      "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Independent sources",
+          "url": "https://duckduckgo.com/?q=%22Apple%22+Tech+%22Apple+claims+the+iPhone+16+camera+system+is+the+biggest+leap+in+mobile+photography+ever%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+          "snippet": "{\"iphone_16_camera_issues\": [{\"title\": \"iPhone 16 camera quality sucks? Am I doing something wrong? - Reddit\", \"snippet\": \"A user reports being \\\"really disappointed\\\" after a week with the iPhone 16, citing buggy software and poor quality photos, claiming their older iPhone SE took better quality pictures.\", \"link\": \"https://www.reddit.com/r/iphone/comments/1hbjcjt/iphone_16_camera_quality_sucks_am_i_doing/\", \"signal\": \"Negative/Mixed Signal: Software bugs and a perceived regression in photo qu",
+          "source": "Independent sources"
+        }
+      ]
+    },
+    "source_sections": {
+      "official_sources": {
+        "key": "official_sources",
+        "label": "Official sources",
+        "query": "\"Apple\" \"the iPhone 16 camera system\" site:apple.com",
+        "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+        "items": [
+          {
+            "title": "Official sources",
+            "url": "https://duckduckgo.com/?q=%22Apple%22+%22the+iPhone+16+camera+system%22+site%3Aapple.com",
+            "snippet": "{\"research_findings\": [{\"title\": \"Apple debuts iPhone 16 Pro and iPhone 16 Pro Max\", \"snippet\": \"Apple introduced the iPhone 16 Pro lineup featuring \\\"innovative pro camera features,\\\" including a new 48MP Fusion camera with a faster quad-pixel sensor and 4K120 fps video recording in Dolby Vision. Apple claims \\\"the world\\u2019s favorite camera gets even more powerful\\\" with these advancements.\", \"link\": \"https://www.apple.com/newsroom/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/\"},",
+            "source": "Official sources"
+          }
+        ],
+        "raw_result": {
+          "research_findings": [
+            {
+              "title": "Apple debuts iPhone 16 Pro and iPhone 16 Pro Max",
+              "snippet": "Apple introduced the iPhone 16 Pro lineup featuring \"innovative pro camera features,\" including a new 48MP Fusion camera with a faster quad-pixel sensor and 4K120 fps video recording in Dolby Vision. Apple claims \"the world\u2019s favorite camera gets even more powerful\" with these advancements.",
+              "link": "https://www.apple.com/newsroom/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/"
+            },
+            {
+              "title": "Apple introduces iPhone 16 and iPhone 16 Plus",
+              "snippet": "Apple announced the iPhone 16 and 16 Plus with a \"powerful new camera system\" designed to capture moments \"like never before.\" Key features include a 48MP Fusion camera with a 2x Telephoto option (providing \"two cameras in one\") and a new Ultra Wide camera for macro photography.",
+              "link": "https://www.apple.com/newsroom/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/"
+            },
+            {
+              "title": "Apple debuts iPhone 16e: A powerful new member of the iPhone 16 family",
+              "snippet": "Announced in February 2025, the iPhone 16e features an \"integrated high-resolution 48MP 2-in-1 camera system.\" Apple highlights that this model brings breakthrough camera capabilities and the performance of the A18 chip to a more affordable member of the iPhone 16 family.",
+              "link": "https://www.apple.com/newsroom/2025/02/apple-debuts-iphone-16e-a-powerful-new-member-of-the-iphone-16-family/"
+            }
+          ],
+          "note": "While Apple uses phrases such as \"powerful new camera system\" and \"capture memories like never before,\" official documentation does not use the exact phrase \"biggest leap in mobile photography ever\" for the iPhone 16. That specific \"biggest leap\" branding was previously utilized by Apple for the iPhone 14 Pro launch.",
+          "research_goal": "Based on official Apple press releases and public statements from the Apple Newsroom, here are the research findings regarding the iPhone 16 camera system and brand claims."
+        }
+      },
+      "independent_sources": {
+        "key": "independent_sources",
+        "label": "Independent sources",
+        "query": "\"Apple\" Tech \"Apple claims the iPhone 16 camera system is the biggest leap in mobile photography ever\" (site:old.reddit.com OR site:trustpilot.com OR site:tripadvisor.com OR site:glassdoor.com OR site:g2.com OR site:wirecutter.com OR site:consumerreports.org)",
+        "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+        "items": [
+          {
+            "title": "Independent sources",
+            "url": "https://duckduckgo.com/?q=%22Apple%22+Tech+%22Apple+claims+the+iPhone+16+camera+system+is+the+biggest+leap+in+mobile+photography+ever%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+            "snippet": "{\"iphone_16_camera_issues\": [{\"title\": \"iPhone 16 camera quality sucks? Am I doing something wrong? - Reddit\", \"snippet\": \"A user reports being \\\"really disappointed\\\" after a week with the iPhone 16, citing buggy software and poor quality photos, claiming their older iPhone SE took better quality pictures.\", \"link\": \"https://www.reddit.com/r/iphone/comments/1hbjcjt/iphone_16_camera_quality_sucks_am_i_doing/\", \"signal\": \"Negative/Mixed Signal: Software bugs and a perceived regression in photo qu",
+            "source": "Independent sources"
+          }
+        ],
+        "raw_result": {
+          "iphone_16_camera_issues": [
+            {
+              "title": "iPhone 16 camera quality sucks? Am I doing something wrong? - Reddit",
+              "snippet": "A user reports being \"really disappointed\" after a week with the iPhone 16, citing buggy software and poor quality photos, claiming their older iPhone SE took better quality pictures.",
+              "link": "https://www.reddit.com/r/iphone/comments/1hbjcjt/iphone_16_camera_quality_sucks_am_i_doing/",
+              "signal": "Negative/Mixed Signal: Software bugs and a perceived regression in photo quality compared to legacy budget models like the SE."
+            },
+            {
+              "title": "iPhone 16 Pro Camera is trash - Reddit",
+              "snippet": "Criticism focuses on the vanishing of the characteristic \"warm orange tint\" in photos, with images appearing \"SO white\" and having \"unnecessary\" processing.",
+              "link": "https://www.reddit.com/r/iphone/comments/1l2mat8/iphone_16_pro_camera_is_trash/",
+              "signal": "Negative/Mixed Signal: Dissatisfaction with changes in color science and over-processing that deviates from the traditional iPhone look."
+            },
+            {
+              "title": "iPhone 16 pro Grainy Camera - Reddit",
+              "snippet": "Discussion regarding \"grainy\" images, with claims that it is a \"physical issue\" related to poor quality control (QC) of the lens and image sensors.",
+              "link": "https://www.reddit.com/r/iphone/comments/1fmp6hi/iphone_16_pro_grainy_camera/",
+              "signal": "Negative/Mixed Signal: Serious concerns about hardware manufacturing quality and Apple's perceived denial of hardware-level defects."
+            }
+          ]
+        }
+      }
+    },
+    "meta": {
+      "category": "Tech",
+      "subject": "Apple",
+      "claim_or_question": "Apple claims the iPhone 16 camera system is the biggest leap in mobile photography ever",
+      "source": "tinyfish-sse"
+    }
+  },
+  "source_sections": {
+    "official_sources": {
+      "key": "official_sources",
+      "label": "Official sources",
+      "query": "\"Apple\" \"the iPhone 16 camera system\" site:apple.com",
+      "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Official sources",
+          "url": "https://duckduckgo.com/?q=%22Apple%22+%22the+iPhone+16+camera+system%22+site%3Aapple.com",
+          "snippet": "{\"research_findings\": [{\"title\": \"Apple debuts iPhone 16 Pro and iPhone 16 Pro Max\", \"snippet\": \"Apple introduced the iPhone 16 Pro lineup featuring \\\"innovative pro camera features,\\\" including a new 48MP Fusion camera with a faster quad-pixel sensor and 4K120 fps video recording in Dolby Vision. Apple claims \\\"the world\\u2019s favorite camera gets even more powerful\\\" with these advancements.\", \"link\": \"https://www.apple.com/newsroom/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/\"},",
+          "source": "Official sources"
+        }
+      ],
+      "raw_result": {
+        "research_findings": [
+          {
+            "title": "Apple debuts iPhone 16 Pro and iPhone 16 Pro Max",
+            "snippet": "Apple introduced the iPhone 16 Pro lineup featuring \"innovative pro camera features,\" including a new 48MP Fusion camera with a faster quad-pixel sensor and 4K120 fps video recording in Dolby Vision. Apple claims \"the world\u2019s favorite camera gets even more powerful\" with these advancements.",
+            "link": "https://www.apple.com/newsroom/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/"
+          },
+          {
+            "title": "Apple introduces iPhone 16 and iPhone 16 Plus",
+            "snippet": "Apple announced the iPhone 16 and 16 Plus with a \"powerful new camera system\" designed to capture moments \"like never before.\" Key features include a 48MP Fusion camera with a 2x Telephoto option (providing \"two cameras in one\") and a new Ultra Wide camera for macro photography.",
+            "link": "https://www.apple.com/newsroom/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/"
+          },
+          {
+            "title": "Apple debuts iPhone 16e: A powerful new member of the iPhone 16 family",
+            "snippet": "Announced in February 2025, the iPhone 16e features an \"integrated high-resolution 48MP 2-in-1 camera system.\" Apple highlights that this model brings breakthrough camera capabilities and the performance of the A18 chip to a more affordable member of the iPhone 16 family.",
+            "link": "https://www.apple.com/newsroom/2025/02/apple-debuts-iphone-16e-a-powerful-new-member-of-the-iphone-16-family/"
+          }
+        ],
+        "note": "While Apple uses phrases such as \"powerful new camera system\" and \"capture memories like never before,\" official documentation does not use the exact phrase \"biggest leap in mobile photography ever\" for the iPhone 16. That specific \"biggest leap\" branding was previously utilized by Apple for the iPhone 14 Pro launch.",
+        "research_goal": "Based on official Apple press releases and public statements from the Apple Newsroom, here are the research findings regarding the iPhone 16 camera system and brand claims."
+      }
+    },
+    "independent_sources": {
+      "key": "independent_sources",
+      "label": "Independent sources",
+      "query": "\"Apple\" Tech \"Apple claims the iPhone 16 camera system is the biggest leap in mobile photography ever\" (site:old.reddit.com OR site:trustpilot.com OR site:tripadvisor.com OR site:glassdoor.com OR site:g2.com OR site:wirecutter.com OR site:consumerreports.org)",
+      "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Independent sources",
+          "url": "https://duckduckgo.com/?q=%22Apple%22+Tech+%22Apple+claims+the+iPhone+16+camera+system+is+the+biggest+leap+in+mobile+photography+ever%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+          "snippet": "{\"iphone_16_camera_issues\": [{\"title\": \"iPhone 16 camera quality sucks? Am I doing something wrong? - Reddit\", \"snippet\": \"A user reports being \\\"really disappointed\\\" after a week with the iPhone 16, citing buggy software and poor quality photos, claiming their older iPhone SE took better quality pictures.\", \"link\": \"https://www.reddit.com/r/iphone/comments/1hbjcjt/iphone_16_camera_quality_sucks_am_i_doing/\", \"signal\": \"Negative/Mixed Signal: Software bugs and a perceived regression in photo qu",
+          "source": "Independent sources"
+        }
+      ],
+      "raw_result": {
+        "iphone_16_camera_issues": [
+          {
+            "title": "iPhone 16 camera quality sucks? Am I doing something wrong? - Reddit",
+            "snippet": "A user reports being \"really disappointed\" after a week with the iPhone 16, citing buggy software and poor quality photos, claiming their older iPhone SE took better quality pictures.",
+            "link": "https://www.reddit.com/r/iphone/comments/1hbjcjt/iphone_16_camera_quality_sucks_am_i_doing/",
+            "signal": "Negative/Mixed Signal: Software bugs and a perceived regression in photo quality compared to legacy budget models like the SE."
+          },
+          {
+            "title": "iPhone 16 Pro Camera is trash - Reddit",
+            "snippet": "Criticism focuses on the vanishing of the characteristic \"warm orange tint\" in photos, with images appearing \"SO white\" and having \"unnecessary\" processing.",
+            "link": "https://www.reddit.com/r/iphone/comments/1l2mat8/iphone_16_pro_camera_is_trash/",
+            "signal": "Negative/Mixed Signal: Dissatisfaction with changes in color science and over-processing that deviates from the traditional iPhone look."
+          },
+          {
+            "title": "iPhone 16 pro Grainy Camera - Reddit",
+            "snippet": "Discussion regarding \"grainy\" images, with claims that it is a \"physical issue\" related to poor quality control (QC) of the lens and image sensors.",
+            "link": "https://www.reddit.com/r/iphone/comments/1fmp6hi/iphone_16_pro_grainy_camera/",
+            "signal": "Negative/Mixed Signal: Serious concerns about hardware manufacturing quality and Apple's perceived denial of hardware-level defects."
+          }
+        ]
+      }
+    }
+  },
+  "low_signal": true,
+  "stream_events": [
+    {
+      "kind": "stage",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "message": "Checking trusted review and forum domains for independent signals."
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "STARTED",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "timestamp": "2026-03-28T07:20:55.722Z"
+      }
+    },
+    {
+      "kind": "stage",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "message": "Checking official sources for direct brand claims and hiring posture."
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "STARTED",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "timestamp": "2026-03-28T07:20:58.223Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "STREAMING_URL",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "streaming_url": "https://ip-52-53-166-207.tetra-data.production.tinyfish.io/tf-25e0e2df-8fe1-4f69-a14a-2ee711758ab5/stream/0",
+        "timestamp": "2026-03-28T07:21:08.093Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:21:13.224Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Visit DuckDuckGo search results for Apple iPhone 16 camera claims.",
+        "timestamp": "2026-03-28T07:21:11.750Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "STREAMING_URL",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "streaming_url": "https://ip-52-53-245-245.tetra-data.production.tinyfish.io/tf-b3c78b58-1a33-4cb3-890d-e3e8106dc724/stream/0",
+        "timestamp": "2026-03-28T07:21:13.767Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Visit DuckDuckGo search results for Apple iPhone 16 camera system.",
+        "timestamp": "2026-03-28T07:21:18.303Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Extract DuckDuckGo search results for Apple iPhone 16 camera claims from trusted domains.",
+        "timestamp": "2026-03-28T07:21:17.125Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Refine search query to find relevant results.",
+        "timestamp": "2026-03-28T07:21:25.577Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Extract search result titles, snippets, and links from DuckDuckGo.",
+        "timestamp": "2026-03-28T07:21:31.271Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Submit the refined search query.",
+        "timestamp": "2026-03-28T07:21:30.016Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Extract the refined DuckDuckGo search results.",
+        "timestamp": "2026-03-28T07:21:34.677Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Broaden the search to find official Apple iPhone 16 camera system pages.",
+        "timestamp": "2026-03-28T07:21:39.750Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Broaden search to find discussions on old.reddit.com.",
+        "timestamp": "2026-03-28T07:21:41.506Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Execute the search for iPhone 16 camera system.",
+        "timestamp": "2026-03-28T07:21:44.819Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Submit the search for Reddit results.",
+        "timestamp": "2026-03-28T07:21:46.077Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Extract search result titles, snippets, and links from DuckDuckGo.",
+        "timestamp": "2026-03-28T07:21:50.059Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Extract snippets and URLs from the current DuckDuckGo results.",
+        "timestamp": "2026-03-28T07:21:54.004Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:22:07.541Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Search for iPhone 16 camera reviews on professional sites.",
+        "timestamp": "2026-03-28T07:22:06.651Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Search specifically on Wirecutter.",
+        "timestamp": "2026-03-28T07:22:10.818Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Search Wirecutter for iPhone 16.",
+        "timestamp": "2026-03-28T07:22:14.886Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Search Wirecutter for iPhone 16 camera.",
+        "timestamp": "2026-03-28T07:22:20.036Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:22:22.542Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Extract Wirecutter search results from DuckDuckGo.",
+        "timestamp": "2026-03-28T07:22:25.910Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Search for iPhone 16 camera biggest leap across all trusted domains.",
+        "timestamp": "2026-03-28T07:22:32.657Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:22:37.542Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Search for iPhone 16 camera claims across multiple sites.",
+        "timestamp": "2026-03-28T07:22:37.248Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Submit the combined search query.",
+        "timestamp": "2026-03-28T07:22:42.913Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Extract details from the combined search results.",
+        "timestamp": "2026-03-28T07:22:47.639Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:22:52.546Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Search Reddit for iPhone 16 camera reviews.",
+        "timestamp": "2026-03-28T07:22:53.318Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Submit the Reddit camera review search.",
+        "timestamp": "2026-03-28T07:23:00.770Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Extract result details from the Reddit and Consumer Reports search.",
+        "timestamp": "2026-03-28T07:23:05.256Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:23:07.546Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:23:22.024Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:23:22.547Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Search Trustpilot for Apple camera complaints.",
+        "timestamp": "2026-03-28T07:23:25.736Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "purpose": "Search Trustpilot for Apple iPhone 16 camera issues.",
+        "timestamp": "2026-03-28T07:23:31.461Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:23:37.548Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:23:46.972Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "COMPLETE",
+        "run_id": "3bc5c23f-eceb-41eb-abd3-5f0677f041e8",
+        "status": "COMPLETED",
+        "timestamp": "2026-03-28T07:23:44.537Z",
+        "result": {
+          "iphone_16_camera_issues": [
+            {
+              "title": "iPhone 16 camera quality sucks? Am I doing something wrong? - Reddit",
+              "snippet": "A user reports being \"really disappointed\" after a week with the iPhone 16, citing buggy software and poor quality photos, claiming their older iPhone SE took better quality pictures.",
+              "link": "https://www.reddit.com/r/iphone/comments/1hbjcjt/iphone_16_camera_quality_sucks_am_i_doing/",
+              "signal": "Negative/Mixed Signal: Software bugs and a perceived regression in photo quality compared to legacy budget models like the SE."
+            },
+            {
+              "title": "iPhone 16 Pro Camera is trash - Reddit",
+              "snippet": "Criticism focuses on the vanishing of the characteristic \"warm orange tint\" in photos, with images appearing \"SO white\" and having \"unnecessary\" processing.",
+              "link": "https://www.reddit.com/r/iphone/comments/1l2mat8/iphone_16_pro_camera_is_trash/",
+              "signal": "Negative/Mixed Signal: Dissatisfaction with changes in color science and over-processing that deviates from the traditional iPhone look."
+            },
+            {
+              "title": "iPhone 16 pro Grainy Camera - Reddit",
+              "snippet": "Discussion regarding \"grainy\" images, with claims that it is a \"physical issue\" related to poor quality control (QC) of the lens and image sensors.",
+              "link": "https://www.reddit.com/r/iphone/comments/1fmp6hi/iphone_16_pro_grainy_camera/",
+              "signal": "Negative/Mixed Signal: Serious concerns about hardware manufacturing quality and Apple's perceived denial of hardware-level defects."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:23:52.549Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:24:05.918Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:24:07.549Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "STREAMING_URL",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "streaming_url": "https://ip-54-183-147-16.tetra-data.production.tinyfish.io/tf-40134023-ad92-43fb-9559-cd3866bdaa1f/stream/0",
+        "timestamp": "2026-03-28T07:24:07.000Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Visit DuckDuckGo search results for Apple iPhone 16 camera system.",
+        "timestamp": "2026-03-28T07:24:09.508Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Search for iPhone 16 camera system on Apple's site.",
+        "timestamp": "2026-03-28T07:24:15.807Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Submit the search query for iPhone 16 camera system.",
+        "timestamp": "2026-03-28T07:24:19.157Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Check for search results.",
+        "timestamp": "2026-03-28T07:24:23.478Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Search for iPhone 16 camera system in Apple Newsroom.",
+        "timestamp": "2026-03-28T07:24:30.304Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Search for iPhone 16 camera info on Apple's site.",
+        "timestamp": "2026-03-28T07:24:35.023Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Search for the exact claim about biggest leap in mobile photography.",
+        "timestamp": "2026-03-28T07:24:42.036Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Search for iPhone 16 newsroom pages.",
+        "timestamp": "2026-03-28T07:24:46.511Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Submit search for iPhone 16 in newsroom.",
+        "timestamp": "2026-03-28T07:24:50.126Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Extract iPhone 16 related links and snippets.",
+        "timestamp": "2026-03-28T07:24:53.553Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Check iPhone 16 Pro press release for camera system claims.",
+        "timestamp": "2026-03-28T07:25:06.942Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Extract camera system claims from iPhone 16 Pro press release.",
+        "timestamp": "2026-03-28T07:25:15.370Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Check iPhone 16 press release for camera system claims.",
+        "timestamp": "2026-03-28T07:25:22.298Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Extract camera system claims from iPhone 16 press release.",
+        "timestamp": "2026-03-28T07:25:27.485Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Search for 'leap' or 'biggest' in the iPhone 16 Pro press release.",
+        "timestamp": "2026-03-28T07:25:35.901Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Check for 'leap' or 'biggest' in the iPhone 16 Pro press release.",
+        "timestamp": "2026-03-28T07:25:41.484Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Check iPhone 16 Pro press release for 'leap' or 'biggest'.",
+        "timestamp": "2026-03-28T07:25:48.389Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Check for 'leap' or 'biggest' in the iPhone 16 Pro press release.",
+        "timestamp": "2026-03-28T07:25:53.560Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Search for the 'biggest leap' claim source.",
+        "timestamp": "2026-03-28T07:26:02.191Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Return to DuckDuckGo to search for the specific claim.",
+        "timestamp": "2026-03-28T07:26:08.264Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Check iPhone 16e press release.",
+        "timestamp": "2026-03-28T07:26:14.856Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Search for the 'biggest leap' phrase on Apple's site.",
+        "timestamp": "2026-03-28T07:26:25.115Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Re-examine iPhone 16 Pro press release for specific quotes.",
+        "timestamp": "2026-03-28T07:26:29.872Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "purpose": "Check if the exact claim exists for iPhone 16.",
+        "timestamp": "2026-03-28T07:26:36.803Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:26:55.348Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "COMPLETE",
+        "run_id": "91b375b0-5d6c-4c5f-9d77-823e1e7ffd4f",
+        "status": "COMPLETED",
+        "timestamp": "2026-03-28T07:26:52.566Z",
+        "result": {
+          "research_findings": [
+            {
+              "title": "Apple debuts iPhone 16 Pro and iPhone 16 Pro Max",
+              "snippet": "Apple introduced the iPhone 16 Pro lineup featuring \"innovative pro camera features,\" including a new 48MP Fusion camera with a faster quad-pixel sensor and 4K120 fps video recording in Dolby Vision. Apple claims \"the world\u2019s favorite camera gets even more powerful\" with these advancements.",
+              "link": "https://www.apple.com/newsroom/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/"
+            },
+            {
+              "title": "Apple introduces iPhone 16 and iPhone 16 Plus",
+              "snippet": "Apple announced the iPhone 16 and 16 Plus with a \"powerful new camera system\" designed to capture moments \"like never before.\" Key features include a 48MP Fusion camera with a 2x Telephoto option (providing \"two cameras in one\") and a new Ultra Wide camera for macro photography.",
+              "link": "https://www.apple.com/newsroom/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/"
+            },
+            {
+              "title": "Apple debuts iPhone 16e: A powerful new member of the iPhone 16 family",
+              "snippet": "Announced in February 2025, the iPhone 16e features an \"integrated high-resolution 48MP 2-in-1 camera system.\" Apple highlights that this model brings breakthrough camera capabilities and the performance of the A18 chip to a more affordable member of the iPhone 16 family.",
+              "link": "https://www.apple.com/newsroom/2025/02/apple-debuts-iphone-16e-a-powerful-new-member-of-the-iphone-16-family/"
+            }
+          ],
+          "note": "While Apple uses phrases such as \"powerful new camera system\" and \"capture memories like never before,\" official documentation does not use the exact phrase \"biggest leap in mobile photography ever\" for the iPhone 16. That specific \"biggest leap\" branding was previously utilized by Apple for the iPhone 14 Pro launch.",
+          "research_goal": "Based on official Apple press releases and public statements from the Apple Newsroom, here are the research findings regarding the iPhone 16 camera system and brand claims."
+        }
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:27:18.378Z"
+      }
+    }
+  ]
+}

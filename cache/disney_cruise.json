@@ -1,0 +1,964 @@
+{
+  "result": {
+    "gap_score": 4,
+    "verdict": "Mixed signals",
+    "trust_statement": "The claim is only partially supported. Public evidence points in both directions, so it should be treated with caution. Gap score: 4/10.",
+    "dimension_scores": {
+      "Claim Frequency": 2,
+      "Signal Strength": 7,
+      "Recency": 0,
+      "Severity": 6,
+      "Consistency": 4
+    },
+    "official_claims": [
+      "Official sources for Disney Cruise emphasize the value proposition around 'Disney's cruise is hyped as a dream destination by Disney and influencers.'.",
+      "Official signal: {\"title\": \"Disney Cruise Line 'Dream' Experience Positioning\", \"description\": \"The Disney Cruise Line experience is officially positioned as.",
+      "Entertainment marketing language is being compared against off-platform feedback."
+    ],
+    "independent_signals": [
+      "Independent signal: {\"findings\": [{\"title\": \"What's something that everyone hyped up that didn't live up to it?\", \"url\": \"https://old.reddit.com/r/WaltDisneyWor.",
+      "Reviews, forums, and blogs are weighted as counter-evidence in the gap score.",
+      "The stronger and more repeated the complaints, the higher the risk score climbs."
+    ],
+    "bullets": [
+      "Compared official messaging and independent reviews for Disney Cruise.",
+      "Question tested: Disney's cruise is hyped as a dream destination by Disney and influencers.",
+      "Five-dimension average produced a 4/10 gap score."
+    ],
+    "model_note": "OpenAI API unavailable, so GapEngine used a deterministic fallback scorer."
+  },
+  "evidence": {
+    "official_sources": {
+      "label": "Official sources",
+      "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Disney Cruise Line 'Dream' Experience Positioning",
+          "url": "https://duckduckgo.com/?q=%22Disney+Cruise%22+%22hyped+as+a+dream+destination%22+site%3Adisneycruise.com",
+          "snippet": "{\"title\": \"Disney Cruise Line 'Dream' Experience Positioning\", \"description\": \"The Disney Cruise Line experience is officially positioned as a 'dream' experience through its ship naming conventions (Disney Dream, Disney Believe), its themed environments, and the endorsements of its official brand advocates (planDisney panelists) and celebrity godparents.\", \"evidence\": [{\"id\": 1, \"title\": \"Official Brand Claim: Disney Believe \\u2013 Inspired by the Pursuit of Dreams\", \"snippet\": \"Disney Cruise Li",
+          "source": "Official sources"
+        }
+      ]
+    },
+    "independent_sources": {
+      "label": "Independent sources",
+      "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Independent sources",
+          "url": "https://duckduckgo.com/?q=%22Disney+Cruise%22+Entertainment+%22Disney%27s+cruise+is+hyped+as+a+dream+destination+by+Disney+and+influencers.%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+          "snippet": "{\"findings\": [{\"title\": \"What's something that everyone hyped up that didn't live up to it?\", \"url\": \"https://old.reddit.com/r/WaltDisneyWorld/comments/1ngffbr/whats_somthing_that_everyone_hyped_up_that_didnt/\", \"snippet\": \"Not even close to worth the price. This one felt like they went all out for influencer reviews and early guests. And then after a month or...\", \"signal\": \"Negative/Mixed\", \"description\": \"Users expressed that the experience did not justify the premium cost, noting a perceptio",
+          "source": "Independent sources"
+        }
+      ]
+    },
+    "source_sections": {
+      "official_sources": {
+        "key": "official_sources",
+        "label": "Official sources",
+        "query": "\"Disney Cruise\" \"hyped as a dream destination\" site:disneycruise.com",
+        "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+        "items": [
+          {
+            "title": "Disney Cruise Line 'Dream' Experience Positioning",
+            "url": "https://duckduckgo.com/?q=%22Disney+Cruise%22+%22hyped+as+a+dream+destination%22+site%3Adisneycruise.com",
+            "snippet": "{\"title\": \"Disney Cruise Line 'Dream' Experience Positioning\", \"description\": \"The Disney Cruise Line experience is officially positioned as a 'dream' experience through its ship naming conventions (Disney Dream, Disney Believe), its themed environments, and the endorsements of its official brand advocates (planDisney panelists) and celebrity godparents.\", \"evidence\": [{\"id\": 1, \"title\": \"Official Brand Claim: Disney Believe \\u2013 Inspired by the Pursuit of Dreams\", \"snippet\": \"Disney Cruise Li",
+            "source": "Official sources"
+          }
+        ],
+        "raw_result": {
+          "title": "Disney Cruise Line 'Dream' Experience Positioning",
+          "description": "The Disney Cruise Line experience is officially positioned as a 'dream' experience through its ship naming conventions (Disney Dream, Disney Believe), its themed environments, and the endorsements of its official brand advocates (planDisney panelists) and celebrity godparents.",
+          "evidence": [
+            {
+              "id": 1,
+              "title": "Official Brand Claim: Disney Believe \u2013 Inspired by the Pursuit of Dreams",
+              "snippet": "Disney Cruise Line officially announced the 'Disney Believe' as its next ship in the Wish class. The ship\u2019s motif is centered on 'promise and possibilities,' specifically honoring 'the dreamers and doers who dare to pursue their own happily ever after.' The brand claims to blend immersive storytelling with cutting-edge technology to create 'one-of-a-kind vacation experiences' where beloved stories from Disney, Pixar, Marvel, and Star Wars come to life.",
+              "link": "https://disneyparksblog.com/dcl/meet-the-disney-believe-the-next-disney-cruise-line-ship/"
+            },
+            {
+              "id": 2,
+              "title": "Official Advocacy: planDisney Panelists on 'Dream Destinations'",
+              "snippet": "On the official planDisney advice site, panelists (selected brand advocates and 'influencers') frequently describe Disney Cruise Line voyages and specific ports, such as New Zealand and the Bahamas, as 'dream destinations.' These panelists are vetted by Disney to provide expert advice, effectively hyping the cruise experience as a pinnacle 'dream' vacation for families and adults alike.",
+              "link": "https://plandisney.disney.go.com/destinations/disney-cruise-line/"
+            },
+            {
+              "id": 3,
+              "title": "Direct Brand Marketing: Disney Island Destinations as 'Paradise'",
+              "snippet": "Disney Cruise Line markets its private island destinations, Castaway Cay and Lookout Cay at Lighthouse Point, as 'private island paradise' and 'dream destinations.' The brand emphasizes that these exclusive locations offer 'unforgettable character moments' and 'magical worlds' that fulfill the brand promise of a dream-inspired getaway. Celebrity 'godparents' like Robert Downey Jr. (for the Disney Adventure) are used to further 'hype' these ships and destinations to a global audience.",
+              "link": "https://disneycruise.disney.go.com/why-cruise-disney/families/"
+            }
+          ]
+        }
+      },
+      "independent_sources": {
+        "key": "independent_sources",
+        "label": "Independent sources",
+        "query": "\"Disney Cruise\" Entertainment \"Disney's cruise is hyped as a dream destination by Disney and influencers.\" (site:old.reddit.com OR site:trustpilot.com OR site:tripadvisor.com OR site:glassdoor.com OR site:g2.com OR site:wirecutter.com OR site:consumerreports.org)",
+        "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+        "items": [
+          {
+            "title": "Independent sources",
+            "url": "https://duckduckgo.com/?q=%22Disney+Cruise%22+Entertainment+%22Disney%27s+cruise+is+hyped+as+a+dream+destination+by+Disney+and+influencers.%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+            "snippet": "{\"findings\": [{\"title\": \"What's something that everyone hyped up that didn't live up to it?\", \"url\": \"https://old.reddit.com/r/WaltDisneyWorld/comments/1ngffbr/whats_somthing_that_everyone_hyped_up_that_didnt/\", \"snippet\": \"Not even close to worth the price. This one felt like they went all out for influencer reviews and early guests. And then after a month or...\", \"signal\": \"Negative/Mixed\", \"description\": \"Users expressed that the experience did not justify the premium cost, noting a perceptio",
+            "source": "Independent sources"
+          }
+        ],
+        "raw_result": {
+          "findings": [
+            {
+              "title": "What's something that everyone hyped up that didn't live up to it?",
+              "url": "https://old.reddit.com/r/WaltDisneyWorld/comments/1ngffbr/whats_somthing_that_everyone_hyped_up_that_didnt/",
+              "snippet": "Not even close to worth the price. This one felt like they went all out for influencer reviews and early guests. And then after a month or...",
+              "signal": "Negative/Mixed",
+              "description": "Users expressed that the experience did not justify the premium cost, noting a perception that Disney prioritizes \"optics\" for influencer reviews over long-term quality for regular paying guests."
+            },
+            {
+              "title": "Influencers Disclosing Free Cruises",
+              "url": "https://old.reddit.com/r/Cruise/comments/1gq1ax1/influencers_disclosing_free_cruises/",
+              "snippet": "Best Disney cruise influencer programs. Reviews of Disney adventure... They all are over hyped, and seem like they are more a...",
+              "signal": "Negative/Mixed",
+              "description": "Commenters noted that influencer-led reviews of new offerings (like the Disney Adventure) often feel like marketing scripts rather than objective critiques, leading to \"over-hyped\" expectations that may not reflect reality for non-sponsored travelers."
+            },
+            {
+              "title": "I just took the 2nd sailing of Disney Adventure",
+              "url": "https://old.reddit.com/r/singapore/comments/1rvby3w/i_just_took_the_2nd_sailing_of_disney_adventure/",
+              "snippet": "...hyped up since it's the FIRST DISNEY CRUISE IN ASIA. Of course... Apparently the media/influencer Cruise with 3000+ people each took...",
+              "signal": "Negative/Mixed",
+              "description": "This recent report highlights the massive scale of influencer presence during initial sailings (over 3,000 media/influencers), which creates a \"dream destination\" narrative that can contrast with the actual logistical and operational experience for standard passengers during early public sailings."
+            }
+          ],
+          "source": "Independent public discussions and reviews from old.reddit.com on Disney Cruises and influencer influence in the entertainment/travel category"
+        }
+      }
+    },
+    "meta": {
+      "category": "Entertainment",
+      "subject": "Disney Cruise",
+      "claim_or_question": "Disney's cruise is hyped as a dream destination by Disney and influencers.",
+      "source": "tinyfish-sse"
+    }
+  },
+  "source_sections": {
+    "official_sources": {
+      "key": "official_sources",
+      "label": "Official sources",
+      "query": "\"Disney Cruise\" \"hyped as a dream destination\" site:disneycruise.com",
+      "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Disney Cruise Line 'Dream' Experience Positioning",
+          "url": "https://duckduckgo.com/?q=%22Disney+Cruise%22+%22hyped+as+a+dream+destination%22+site%3Adisneycruise.com",
+          "snippet": "{\"title\": \"Disney Cruise Line 'Dream' Experience Positioning\", \"description\": \"The Disney Cruise Line experience is officially positioned as a 'dream' experience through its ship naming conventions (Disney Dream, Disney Believe), its themed environments, and the endorsements of its official brand advocates (planDisney panelists) and celebrity godparents.\", \"evidence\": [{\"id\": 1, \"title\": \"Official Brand Claim: Disney Believe \\u2013 Inspired by the Pursuit of Dreams\", \"snippet\": \"Disney Cruise Li",
+          "source": "Official sources"
+        }
+      ],
+      "raw_result": {
+        "title": "Disney Cruise Line 'Dream' Experience Positioning",
+        "description": "The Disney Cruise Line experience is officially positioned as a 'dream' experience through its ship naming conventions (Disney Dream, Disney Believe), its themed environments, and the endorsements of its official brand advocates (planDisney panelists) and celebrity godparents.",
+        "evidence": [
+          {
+            "id": 1,
+            "title": "Official Brand Claim: Disney Believe \u2013 Inspired by the Pursuit of Dreams",
+            "snippet": "Disney Cruise Line officially announced the 'Disney Believe' as its next ship in the Wish class. The ship\u2019s motif is centered on 'promise and possibilities,' specifically honoring 'the dreamers and doers who dare to pursue their own happily ever after.' The brand claims to blend immersive storytelling with cutting-edge technology to create 'one-of-a-kind vacation experiences' where beloved stories from Disney, Pixar, Marvel, and Star Wars come to life.",
+            "link": "https://disneyparksblog.com/dcl/meet-the-disney-believe-the-next-disney-cruise-line-ship/"
+          },
+          {
+            "id": 2,
+            "title": "Official Advocacy: planDisney Panelists on 'Dream Destinations'",
+            "snippet": "On the official planDisney advice site, panelists (selected brand advocates and 'influencers') frequently describe Disney Cruise Line voyages and specific ports, such as New Zealand and the Bahamas, as 'dream destinations.' These panelists are vetted by Disney to provide expert advice, effectively hyping the cruise experience as a pinnacle 'dream' vacation for families and adults alike.",
+            "link": "https://plandisney.disney.go.com/destinations/disney-cruise-line/"
+          },
+          {
+            "id": 3,
+            "title": "Direct Brand Marketing: Disney Island Destinations as 'Paradise'",
+            "snippet": "Disney Cruise Line markets its private island destinations, Castaway Cay and Lookout Cay at Lighthouse Point, as 'private island paradise' and 'dream destinations.' The brand emphasizes that these exclusive locations offer 'unforgettable character moments' and 'magical worlds' that fulfill the brand promise of a dream-inspired getaway. Celebrity 'godparents' like Robert Downey Jr. (for the Disney Adventure) are used to further 'hype' these ships and destinations to a global audience.",
+            "link": "https://disneycruise.disney.go.com/why-cruise-disney/families/"
+          }
+        ]
+      }
+    },
+    "independent_sources": {
+      "key": "independent_sources",
+      "label": "Independent sources",
+      "query": "\"Disney Cruise\" Entertainment \"Disney's cruise is hyped as a dream destination by Disney and influencers.\" (site:old.reddit.com OR site:trustpilot.com OR site:tripadvisor.com OR site:glassdoor.com OR site:g2.com OR site:wirecutter.com OR site:consumerreports.org)",
+      "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Independent sources",
+          "url": "https://duckduckgo.com/?q=%22Disney+Cruise%22+Entertainment+%22Disney%27s+cruise+is+hyped+as+a+dream+destination+by+Disney+and+influencers.%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+          "snippet": "{\"findings\": [{\"title\": \"What's something that everyone hyped up that didn't live up to it?\", \"url\": \"https://old.reddit.com/r/WaltDisneyWorld/comments/1ngffbr/whats_somthing_that_everyone_hyped_up_that_didnt/\", \"snippet\": \"Not even close to worth the price. This one felt like they went all out for influencer reviews and early guests. And then after a month or...\", \"signal\": \"Negative/Mixed\", \"description\": \"Users expressed that the experience did not justify the premium cost, noting a perceptio",
+          "source": "Independent sources"
+        }
+      ],
+      "raw_result": {
+        "findings": [
+          {
+            "title": "What's something that everyone hyped up that didn't live up to it?",
+            "url": "https://old.reddit.com/r/WaltDisneyWorld/comments/1ngffbr/whats_somthing_that_everyone_hyped_up_that_didnt/",
+            "snippet": "Not even close to worth the price. This one felt like they went all out for influencer reviews and early guests. And then after a month or...",
+            "signal": "Negative/Mixed",
+            "description": "Users expressed that the experience did not justify the premium cost, noting a perception that Disney prioritizes \"optics\" for influencer reviews over long-term quality for regular paying guests."
+          },
+          {
+            "title": "Influencers Disclosing Free Cruises",
+            "url": "https://old.reddit.com/r/Cruise/comments/1gq1ax1/influencers_disclosing_free_cruises/",
+            "snippet": "Best Disney cruise influencer programs. Reviews of Disney adventure... They all are over hyped, and seem like they are more a...",
+            "signal": "Negative/Mixed",
+            "description": "Commenters noted that influencer-led reviews of new offerings (like the Disney Adventure) often feel like marketing scripts rather than objective critiques, leading to \"over-hyped\" expectations that may not reflect reality for non-sponsored travelers."
+          },
+          {
+            "title": "I just took the 2nd sailing of Disney Adventure",
+            "url": "https://old.reddit.com/r/singapore/comments/1rvby3w/i_just_took_the_2nd_sailing_of_disney_adventure/",
+            "snippet": "...hyped up since it's the FIRST DISNEY CRUISE IN ASIA. Of course... Apparently the media/influencer Cruise with 3000+ people each took...",
+            "signal": "Negative/Mixed",
+            "description": "This recent report highlights the massive scale of influencer presence during initial sailings (over 3,000 media/influencers), which creates a \"dream destination\" narrative that can contrast with the actual logistical and operational experience for standard passengers during early public sailings."
+          }
+        ],
+        "source": "Independent public discussions and reviews from old.reddit.com on Disney Cruises and influencer influence in the entertainment/travel category"
+      }
+    }
+  },
+  "low_signal": true,
+  "stream_events": [
+    {
+      "kind": "stage",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "message": "Checking trusted review and forum domains for independent signals."
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "STARTED",
+        "run_id": "04878873-9b0e-4fdb-8884-732abfb15679",
+        "timestamp": "2026-03-28T07:12:52.476Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:13:07.476Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "STREAMING_URL",
+        "run_id": "04878873-9b0e-4fdb-8884-732abfb15679",
+        "streaming_url": "https://ip-54-193-110-241.tetra-data.production.tinyfish.io/tf-f2f4c94d-362a-499e-8b1e-78430effd4f3/stream/0",
+        "timestamp": "2026-03-28T07:13:01.852Z"
+      }
+    },
+    {
+      "kind": "stage",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "message": "Checking official sources for direct brand claims and hiring posture."
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "STARTED",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "timestamp": "2026-03-28T07:13:11.878Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "04878873-9b0e-4fdb-8884-732abfb15679",
+        "purpose": "Visit DuckDuckGo search results for Disney Cruise entertainment reviews.",
+        "timestamp": "2026-03-28T07:13:05.586Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "04878873-9b0e-4fdb-8884-732abfb15679",
+        "purpose": "Check for search results on the page.",
+        "timestamp": "2026-03-28T07:13:12.280Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "04878873-9b0e-4fdb-8884-732abfb15679",
+        "purpose": "Search for broader terms to find relevant reviews.",
+        "timestamp": "2026-03-28T07:13:19.493Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:13:26.879Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "04878873-9b0e-4fdb-8884-732abfb15679",
+        "purpose": "Submit the search query.",
+        "timestamp": "2026-03-28T07:13:23.444Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "STREAMING_URL",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "streaming_url": "https://ip-54-183-147-16.tetra-data.production.tinyfish.io/tf-2ad0005e-eb50-4473-98d2-a009f00c90d8/stream/0",
+        "timestamp": "2026-03-28T07:13:22.206Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Visit DuckDuckGo search results for Disney Cruise dream destination.",
+        "timestamp": "2026-03-28T07:13:24.737Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "04878873-9b0e-4fdb-8884-732abfb15679",
+        "purpose": "Visit a Reddit thread about hyped Disney things that didn't live up to expectations.",
+        "timestamp": "2026-03-28T07:13:32.601Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Broaden the search to find \"dream destination\" claims on the official site.",
+        "timestamp": "2026-03-28T07:13:31.170Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Submit the search query for \"dream destination\" on disneycruise.com.",
+        "timestamp": "2026-03-28T07:13:36.582Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "04878873-9b0e-4fdb-8884-732abfb15679",
+        "purpose": "Go back to DDG results to use snippets as a fallback.",
+        "timestamp": "2026-03-28T07:13:39.231Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search for the dream destination claim more broadly.",
+        "timestamp": "2026-03-28T07:13:41.827Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "04878873-9b0e-4fdb-8884-732abfb15679",
+        "purpose": "Extract snippet texts from search results.",
+        "timestamp": "2026-03-28T07:13:45.806Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search for dream destination mentions.",
+        "timestamp": "2026-03-28T07:13:50.787Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "See results beyond disneycruise.com to find mentions of the dream destination claim.",
+        "timestamp": "2026-03-28T07:13:56.585Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "04878873-9b0e-4fdb-8884-732abfb15679",
+        "purpose": "Search TripAdvisor for Disney Cruise entertainment reviews.",
+        "timestamp": "2026-03-28T07:13:55.418Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "04878873-9b0e-4fdb-8884-732abfb15679",
+        "purpose": "Check for TripAdvisor results.",
+        "timestamp": "2026-03-28T07:14:00.837Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Check search results for \"dream destination\" mentions.",
+        "timestamp": "2026-03-28T07:14:03.860Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search the official Disney Cruise newsroom for the dream destination claim.",
+        "timestamp": "2026-03-28T07:14:11.761Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:14:22.583Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search for dream destination on official Disney Cruise site.",
+        "timestamp": "2026-03-28T07:14:18.517Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search for the \"dream\" claim on Disney's news site.",
+        "timestamp": "2026-03-28T07:14:24.424Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "COMPLETE",
+        "run_id": "04878873-9b0e-4fdb-8884-732abfb15679",
+        "status": "COMPLETED",
+        "timestamp": "2026-03-28T07:14:21.125Z",
+        "result": {
+          "findings": [
+            {
+              "title": "What's something that everyone hyped up that didn't live up to it?",
+              "url": "https://old.reddit.com/r/WaltDisneyWorld/comments/1ngffbr/whats_somthing_that_everyone_hyped_up_that_didnt/",
+              "snippet": "Not even close to worth the price. This one felt like they went all out for influencer reviews and early guests. And then after a month or...",
+              "signal": "Negative/Mixed",
+              "description": "Users expressed that the experience did not justify the premium cost, noting a perception that Disney prioritizes \"optics\" for influencer reviews over long-term quality for regular paying guests."
+            },
+            {
+              "title": "Influencers Disclosing Free Cruises",
+              "url": "https://old.reddit.com/r/Cruise/comments/1gq1ax1/influencers_disclosing_free_cruises/",
+              "snippet": "Best Disney cruise influencer programs. Reviews of Disney adventure... They all are over hyped, and seem like they are more a...",
+              "signal": "Negative/Mixed",
+              "description": "Commenters noted that influencer-led reviews of new offerings (like the Disney Adventure) often feel like marketing scripts rather than objective critiques, leading to \"over-hyped\" expectations that may not reflect reality for non-sponsored travelers."
+            },
+            {
+              "title": "I just took the 2nd sailing of Disney Adventure",
+              "url": "https://old.reddit.com/r/singapore/comments/1rvby3w/i_just_took_the_2nd_sailing_of_disney_adventure/",
+              "snippet": "...hyped up since it's the FIRST DISNEY CRUISE IN ASIA. Of course... Apparently the media/influencer Cruise with 3000+ people each took...",
+              "signal": "Negative/Mixed",
+              "description": "This recent report highlights the massive scale of influencer presence during initial sailings (over 3,000 media/influencers), which creates a \"dream destination\" narrative that can contrast with the actual logistical and operational experience for standard passengers during early public sailings."
+            }
+          ],
+          "source": "Independent public discussions and reviews from old.reddit.com on Disney Cruises and influencer influence in the entertainment/travel category"
+        }
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Extract \"dream\" mentions from dclnews.com search results.",
+        "timestamp": "2026-03-28T07:14:30.857Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:14:47.380Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search for dream-inspired press releases on dclnews.com.",
+        "timestamp": "2026-03-28T07:14:40.169Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search for the exact phrase \"hyped as a dream destination\".",
+        "timestamp": "2026-03-28T07:14:46.485Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Check for brand claims in the \"dream-inspired\" news article.",
+        "timestamp": "2026-03-28T07:14:51.851Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:15:11.604Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Extract details about the \"dream-inspired\" cruise ship and brand claims.",
+        "timestamp": "2026-03-28T07:15:06.817Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Check the official Disney Parks Blog for \"dream destination\" claims.",
+        "timestamp": "2026-03-28T07:15:16.100Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Extract claims about \"dream destination\" and influencers.",
+        "timestamp": "2026-03-28T07:15:24.555Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search for \"dream destination\" and Castaway Cay.",
+        "timestamp": "2026-03-28T07:15:30.992Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Go to the official Disney Cruise Line homepage.",
+        "timestamp": "2026-03-28T07:15:37.289Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Visit the official Disney Cruise Line homepage.",
+        "timestamp": "2026-03-28T07:15:44.601Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search the official site for \"dream destination\".",
+        "timestamp": "2026-03-28T07:15:54.036Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Check if the \"Why Cruise with Disney?\" page mentions \"dream destination\".",
+        "timestamp": "2026-03-28T07:16:01.041Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Visit the official Disney Cruise Line newsroom.",
+        "timestamp": "2026-03-28T07:16:07.072Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Check the \"Disney Believe\" press release for \"dream destination\" claims.",
+        "timestamp": "2026-03-28T07:16:23.210Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Read the \"Disney Believe\" press release for \"dream\" claims.",
+        "timestamp": "2026-03-28T07:16:28.359Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Extract claims about \"dream destination\" and influencers from the press release.",
+        "timestamp": "2026-03-28T07:16:34.176Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search for influencer and dream destination mentions.",
+        "timestamp": "2026-03-28T07:16:41.322Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Extract \"dream destination\" and influencer mentions from search results.",
+        "timestamp": "2026-03-28T07:16:47.718Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search for influencer and dream destination without quotes for better results.",
+        "timestamp": "2026-03-28T07:16:55.388Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Extract dream destination and influencer mentions from broadened search.",
+        "timestamp": "2026-03-28T07:16:59.996Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search the official newsroom for the specific phrase.",
+        "timestamp": "2026-03-28T07:17:05.788Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search for dream destination on official site without quotes.",
+        "timestamp": "2026-03-28T07:17:11.852Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Check the \"Why Cruise with Disney?\" page for brand claims.",
+        "timestamp": "2026-03-28T07:17:18.180Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Check the \"Why Cruise Disney\" page for brand claims.",
+        "timestamp": "2026-03-28T07:17:27.392Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Extract brand claims from the \"Why Cruise Disney - Families\" page.",
+        "timestamp": "2026-03-28T07:17:34.378Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Check planDisney for \"dream destination\" mentions.",
+        "timestamp": "2026-03-28T07:17:42.632Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search planDisney for \"dream destination\".",
+        "timestamp": "2026-03-28T07:17:50.885Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Submit the \"dream destination\" search on planDisney.",
+        "timestamp": "2026-03-28T07:17:54.499Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Wait for search results to load on planDisney.",
+        "timestamp": "2026-03-28T07:17:58.769Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Extract planDisney search results.",
+        "timestamp": "2026-03-28T07:18:06.036Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "purpose": "Search for the specific claim phrase.",
+        "timestamp": "2026-03-28T07:18:14.877Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:18:37.181Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "COMPLETE",
+        "run_id": "9396faa7-dba4-404a-97e3-90f46ac0f29e",
+        "status": "COMPLETED",
+        "timestamp": "2026-03-28T07:18:35.502Z",
+        "result": {
+          "title": "Disney Cruise Line 'Dream' Experience Positioning",
+          "description": "The Disney Cruise Line experience is officially positioned as a 'dream' experience through its ship naming conventions (Disney Dream, Disney Believe), its themed environments, and the endorsements of its official brand advocates (planDisney panelists) and celebrity godparents.",
+          "evidence": [
+            {
+              "id": 1,
+              "title": "Official Brand Claim: Disney Believe \u2013 Inspired by the Pursuit of Dreams",
+              "snippet": "Disney Cruise Line officially announced the 'Disney Believe' as its next ship in the Wish class. The ship\u2019s motif is centered on 'promise and possibilities,' specifically honoring 'the dreamers and doers who dare to pursue their own happily ever after.' The brand claims to blend immersive storytelling with cutting-edge technology to create 'one-of-a-kind vacation experiences' where beloved stories from Disney, Pixar, Marvel, and Star Wars come to life.",
+              "link": "https://disneyparksblog.com/dcl/meet-the-disney-believe-the-next-disney-cruise-line-ship/"
+            },
+            {
+              "id": 2,
+              "title": "Official Advocacy: planDisney Panelists on 'Dream Destinations'",
+              "snippet": "On the official planDisney advice site, panelists (selected brand advocates and 'influencers') frequently describe Disney Cruise Line voyages and specific ports, such as New Zealand and the Bahamas, as 'dream destinations.' These panelists are vetted by Disney to provide expert advice, effectively hyping the cruise experience as a pinnacle 'dream' vacation for families and adults alike.",
+              "link": "https://plandisney.disney.go.com/destinations/disney-cruise-line/"
+            },
+            {
+              "id": 3,
+              "title": "Direct Brand Marketing: Disney Island Destinations as 'Paradise'",
+              "snippet": "Disney Cruise Line markets its private island destinations, Castaway Cay and Lookout Cay at Lighthouse Point, as 'private island paradise' and 'dream destinations.' The brand emphasizes that these exclusive locations offer 'unforgettable character moments' and 'magical worlds' that fulfill the brand promise of a dream-inspired getaway. Celebrity 'godparents' like Robert Downey Jr. (for the Disney Adventure) are used to further 'hype' these ships and destinations to a global audience.",
+              "link": "https://disneycruise.disney.go.com/why-cruise-disney/families/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:19:02.856Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "gap-engine",
+  "version": "1.0.0",
+  "description": "Fastify backend for The Gap Engine",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@fastify/swagger": "^9.7.0",
+    "@fastify/swagger-ui": "^5.2.5",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.0.0",
+    "openai": "^5.12.2"
+  }
+}

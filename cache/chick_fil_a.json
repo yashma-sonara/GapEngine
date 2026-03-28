@@ -1,0 +1,1023 @@
+{
+  "result": {
+    "gap_score": 1,
+    "verdict": "Likely worth it",
+    "dimension_scores": {
+      "Claim Frequency": 2,
+      "Signal Strength": 0,
+      "Recency": 0,
+      "Severity": 0,
+      "Consistency": 4
+    },
+    "official_claims": [
+      "Official sources for Chick-Fil-A emphasize the value proposition around 'Chick-fil-A claims its Singapore outlet serves the same quality and recipe as the US original'.",
+      "Official signal: {\"claim\": \"Chick-fil-A officially claims that its Singapore outlet maintains the same quality and original recipe as its U.S. restaurants, p.",
+      "Food and Beverage marketing language is being compared against off-platform feedback."
+    ],
+    "independent_signals": [
+      "Independent signal: {\"chick_fil_a_singapore_reviews\": [{\"id\": 1, \"title\": \"Chick Fil A Bugis+\", \"source\": \"r/SingaporeEats\", \"snippet\": \"Reviews of the Bugis+ l.",
+      "Reviews, forums, and blogs are weighted as counter-evidence in the gap score.",
+      "The stronger and more repeated the complaints, the higher the risk score climbs."
+    ],
+    "bullets": [
+      "Compared official messaging and independent reviews for Chick-Fil-A.",
+      "Question tested: Chick-fil-A claims its Singapore outlet serves the same quality and recipe as the US original",
+      "Five-dimension average produced a 1/10 gap score."
+    ],
+    "model_note": "OpenAI API unavailable, so GapEngine used a deterministic fallback scorer."
+  },
+  "evidence": {
+    "official_sources": {
+      "label": "Official sources",
+      "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Chick-fil-A officially claims that its Singapore outlet maintains the same quality and original recipe as its U.S. restaurants, particularly",
+          "url": "https://www.google.com/search?q=%22Chick-Fil-A%22+%22Singapore+outlet+serves+the+quality%22+site%3Achickfila.com",
+          "snippet": "{\"claim\": \"Chick-fil-A officially claims that its Singapore outlet maintains the same quality and original recipe as its U.S. restaurants, particularly through the use of its signature ingredients and preparation methods.\", \"sources\": [{\"title\": \"Chick-fil-A Singapore Menu: Chick-fil-A\\u00ae Chicken Sandwich\", \"snippet\": \"The brand identifies the sandwich as \\\"Our original Chick-fil-A\\u00ae Chicken Sandwich. An original then, an original now,\\\" specifying it is made with a boneless breast of chi",
+          "source": "Official sources"
+        }
+      ]
+    },
+    "independent_sources": {
+      "label": "Independent sources",
+      "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Independent sources",
+          "url": "https://www.google.com/search?q=%22Chick-Fil-A%22+Food+and+Beverage+%22Chick-fil-A+claims+its+Singapore+outlet+serves+the+same+quality+and+recipe+as+the+US+original%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+          "snippet": "{\"chick_fil_a_singapore_reviews\": [{\"id\": 1, \"title\": \"Chick Fil A Bugis+\", \"source\": \"r/SingaporeEats\", \"snippet\": \"Reviews of the Bugis+ location indicate mixed experiences. While some enjoyed the \\\"Singapore-exclusive garlic chilli,\\\" others reported that the burgers were \\\"a tad salty and small\\\" and that the chicken was \\\"too dry.\\\" One reviewer even described the signature sauce as \\\"basically Teriyaki Mayo.\\\"\", \"link\": \"https://www.reddit.com/r/SingaporeEats/comments/1r5zibz/chick_fil_a_b",
+          "source": "Independent sources"
+        }
+      ]
+    },
+    "source_sections": {
+      "official_sources": {
+        "key": "official_sources",
+        "label": "Official sources",
+        "query": "\"Chick-Fil-A\" \"Singapore outlet serves the quality\" site:chickfila.com",
+        "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+        "items": [
+          {
+            "title": "Chick-fil-A officially claims that its Singapore outlet maintains the same quality and original recipe as its U.S. restaurants, particularly",
+            "url": "https://www.google.com/search?q=%22Chick-Fil-A%22+%22Singapore+outlet+serves+the+quality%22+site%3Achickfila.com",
+            "snippet": "{\"claim\": \"Chick-fil-A officially claims that its Singapore outlet maintains the same quality and original recipe as its U.S. restaurants, particularly through the use of its signature ingredients and preparation methods.\", \"sources\": [{\"title\": \"Chick-fil-A Singapore Menu: Chick-fil-A\\u00ae Chicken Sandwich\", \"snippet\": \"The brand identifies the sandwich as \\\"Our original Chick-fil-A\\u00ae Chicken Sandwich. An original then, an original now,\\\" specifying it is made with a boneless breast of chi",
+            "source": "Official sources"
+          }
+        ],
+        "raw_result": {
+          "claim": "Chick-fil-A officially claims that its Singapore outlet maintains the same quality and original recipe as its U.S. restaurants, particularly through the use of its signature ingredients and preparation methods.",
+          "sources": [
+            {
+              "title": "Chick-fil-A Singapore Menu: Chick-fil-A\u00ae Chicken Sandwich",
+              "snippet": "The brand identifies the sandwich as \"Our original Chick-fil-A\u00ae Chicken Sandwich. An original then, an original now,\" specifying it is made with a boneless breast of chicken \"seasoned to perfection, freshly breaded, pressure cooked in 100% refined peanut oil,\" mirroring the exact recipe and process used in the United States.",
+              "link": "https://www.chick-fil-a.com.sg/menu/entrees/chick-fil-a-chicken-sandwich/"
+            },
+            {
+              "title": "Chick-fil-A Singapore Press Room: Singapore Welcomes First Chick-fil-A Restaurant",
+              "snippet": "Chick-fil-A states that the Singapore restaurant provides \"classic menu items\" made with \"boneless chicken breast filets and quality ingredients,\" emphasizing a commitment to the same \"remarkable restaurant experience\" and \"quality ingredients\" that have been central to the brand's operations for over 50 years.",
+              "link": "https://www.chick-fil-a.com.sg/press-room/singapore-welcomes-first-chick-fil-a-restaurant/"
+            },
+            {
+              "title": "About Chick-fil-A Singapore: Commitment to Quality",
+              "snippet": "The brand highlights that Singapore restaurants follow the same \"hand-breading\" process for classic sandwiches and a \"cook less, more often\" approach to ensure fresh preparation without sacrificing the \"delicious taste\" established by founder S. Truett Cathy in 1967.",
+              "link": "https://www.chick-fil-a.com.sg/about/"
+            }
+          ]
+        }
+      },
+      "independent_sources": {
+        "key": "independent_sources",
+        "label": "Independent sources",
+        "query": "\"Chick-Fil-A\" Food and Beverage \"Chick-fil-A claims its Singapore outlet serves the same quality and recipe as the US original\" (site:old.reddit.com OR site:trustpilot.com OR site:tripadvisor.com OR site:glassdoor.com OR site:g2.com OR site:wirecutter.com OR site:consumerreports.org)",
+        "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+        "items": [
+          {
+            "title": "Independent sources",
+            "url": "https://www.google.com/search?q=%22Chick-Fil-A%22+Food+and+Beverage+%22Chick-fil-A+claims+its+Singapore+outlet+serves+the+same+quality+and+recipe+as+the+US+original%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+            "snippet": "{\"chick_fil_a_singapore_reviews\": [{\"id\": 1, \"title\": \"Chick Fil A Bugis+\", \"source\": \"r/SingaporeEats\", \"snippet\": \"Reviews of the Bugis+ location indicate mixed experiences. While some enjoyed the \\\"Singapore-exclusive garlic chilli,\\\" others reported that the burgers were \\\"a tad salty and small\\\" and that the chicken was \\\"too dry.\\\" One reviewer even described the signature sauce as \\\"basically Teriyaki Mayo.\\\"\", \"link\": \"https://www.reddit.com/r/SingaporeEats/comments/1r5zibz/chick_fil_a_b",
+            "source": "Independent sources"
+          }
+        ],
+        "raw_result": {
+          "chick_fil_a_singapore_reviews": [
+            {
+              "id": 1,
+              "title": "Chick Fil A Bugis+",
+              "source": "r/SingaporeEats",
+              "snippet": "Reviews of the Bugis+ location indicate mixed experiences. While some enjoyed the \"Singapore-exclusive garlic chilli,\" others reported that the burgers were \"a tad salty and small\" and that the chicken was \"too dry.\" One reviewer even described the signature sauce as \"basically Teriyaki Mayo.\"",
+              "link": "https://www.reddit.com/r/SingaporeEats/comments/1r5zibz/chick_fil_a_bugis/",
+              "signals": "The inclusion of a \"Singapore-exclusive\" sauce suggests a departure from the \"same recipe\" claim, while reports of dryness and excessive saltiness signal quality inconsistencies compared to the US standard.",
+              "sentiment": "Negative/Mixed"
+            },
+            {
+              "id": 2,
+              "title": "Chick-fil-A meal for $12.8",
+              "source": "r/SingaporeEats",
+              "snippet": "A reviewer who had previously eaten Chick-Fil-A in the US noted a discrepancy in quality. While they found the US version \"pretty good,\" they described the \"chicken deluxe at Bugis+\" as \"a tad dry\" for both the spicy and regular varieties.",
+              "link": "https://www.reddit.com/r/SingaporeEats/comments/1po2dbs/chickfila_meal_for_128/",
+              "signals": "The specific mention of dryness in Singapore relative to the US experience highlights a perceived lack of quality parity.",
+              "sentiment": "Negative/Mixed"
+            },
+            {
+              "id": 3,
+              "title": "Has anyone ate Chick-Fil-A in Singapore?",
+              "source": "r/SingaporeEats",
+              "snippet": "Discussions characterize the taste as similar to \"original recipe KFC chicken but not as dry.\" While it is considered unique compared to local staples like the Zinger or McSpicy, some users found it \"average at its best\" and questioned the value compared to other US brands like In-N-Out.",
+              "link": "https://www.reddit.com/r/SingaporeEats/comments/1pzg1al/has_anyone_ate_chickfila_in_singapore/",
+              "signals": "Comparing the product to KFC's \"original recipe\" suggests the flavor profile may not be as distinct or high-quality as US fans claim, and the \"average\" rating indicates it may not meet the high expectations set by its US reputation.",
+              "sentiment": "Negative/Mixed"
+            }
+          ]
+        }
+      }
+    },
+    "meta": {
+      "category": "Food and Beverage",
+      "subject": "Chick-Fil-A",
+      "claim_or_question": "Chick-fil-A claims its Singapore outlet serves the same quality and recipe as the US original",
+      "source": "tinyfish-sse"
+    }
+  },
+  "source_sections": {
+    "official_sources": {
+      "key": "official_sources",
+      "label": "Official sources",
+      "query": "\"Chick-Fil-A\" \"Singapore outlet serves the quality\" site:chickfila.com",
+      "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Chick-fil-A officially claims that its Singapore outlet maintains the same quality and original recipe as its U.S. restaurants, particularly",
+          "url": "https://www.google.com/search?q=%22Chick-Fil-A%22+%22Singapore+outlet+serves+the+quality%22+site%3Achickfila.com",
+          "snippet": "{\"claim\": \"Chick-fil-A officially claims that its Singapore outlet maintains the same quality and original recipe as its U.S. restaurants, particularly through the use of its signature ingredients and preparation methods.\", \"sources\": [{\"title\": \"Chick-fil-A Singapore Menu: Chick-fil-A\\u00ae Chicken Sandwich\", \"snippet\": \"The brand identifies the sandwich as \\\"Our original Chick-fil-A\\u00ae Chicken Sandwich. An original then, an original now,\\\" specifying it is made with a boneless breast of chi",
+          "source": "Official sources"
+        }
+      ],
+      "raw_result": {
+        "claim": "Chick-fil-A officially claims that its Singapore outlet maintains the same quality and original recipe as its U.S. restaurants, particularly through the use of its signature ingredients and preparation methods.",
+        "sources": [
+          {
+            "title": "Chick-fil-A Singapore Menu: Chick-fil-A\u00ae Chicken Sandwich",
+            "snippet": "The brand identifies the sandwich as \"Our original Chick-fil-A\u00ae Chicken Sandwich. An original then, an original now,\" specifying it is made with a boneless breast of chicken \"seasoned to perfection, freshly breaded, pressure cooked in 100% refined peanut oil,\" mirroring the exact recipe and process used in the United States.",
+            "link": "https://www.chick-fil-a.com.sg/menu/entrees/chick-fil-a-chicken-sandwich/"
+          },
+          {
+            "title": "Chick-fil-A Singapore Press Room: Singapore Welcomes First Chick-fil-A Restaurant",
+            "snippet": "Chick-fil-A states that the Singapore restaurant provides \"classic menu items\" made with \"boneless chicken breast filets and quality ingredients,\" emphasizing a commitment to the same \"remarkable restaurant experience\" and \"quality ingredients\" that have been central to the brand's operations for over 50 years.",
+            "link": "https://www.chick-fil-a.com.sg/press-room/singapore-welcomes-first-chick-fil-a-restaurant/"
+          },
+          {
+            "title": "About Chick-fil-A Singapore: Commitment to Quality",
+            "snippet": "The brand highlights that Singapore restaurants follow the same \"hand-breading\" process for classic sandwiches and a \"cook less, more often\" approach to ensure fresh preparation without sacrificing the \"delicious taste\" established by founder S. Truett Cathy in 1967.",
+            "link": "https://www.chick-fil-a.com.sg/about/"
+          }
+        ]
+      }
+    },
+    "independent_sources": {
+      "key": "independent_sources",
+      "label": "Independent sources",
+      "query": "\"Chick-Fil-A\" Food and Beverage \"Chick-fil-A claims its Singapore outlet serves the same quality and recipe as the US original\" (site:old.reddit.com OR site:trustpilot.com OR site:tripadvisor.com OR site:glassdoor.com OR site:g2.com OR site:wirecutter.com OR site:consumerreports.org)",
+      "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Independent sources",
+          "url": "https://www.google.com/search?q=%22Chick-Fil-A%22+Food+and+Beverage+%22Chick-fil-A+claims+its+Singapore+outlet+serves+the+same+quality+and+recipe+as+the+US+original%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+          "snippet": "{\"chick_fil_a_singapore_reviews\": [{\"id\": 1, \"title\": \"Chick Fil A Bugis+\", \"source\": \"r/SingaporeEats\", \"snippet\": \"Reviews of the Bugis+ location indicate mixed experiences. While some enjoyed the \\\"Singapore-exclusive garlic chilli,\\\" others reported that the burgers were \\\"a tad salty and small\\\" and that the chicken was \\\"too dry.\\\" One reviewer even described the signature sauce as \\\"basically Teriyaki Mayo.\\\"\", \"link\": \"https://www.reddit.com/r/SingaporeEats/comments/1r5zibz/chick_fil_a_b",
+          "source": "Independent sources"
+        }
+      ],
+      "raw_result": {
+        "chick_fil_a_singapore_reviews": [
+          {
+            "id": 1,
+            "title": "Chick Fil A Bugis+",
+            "source": "r/SingaporeEats",
+            "snippet": "Reviews of the Bugis+ location indicate mixed experiences. While some enjoyed the \"Singapore-exclusive garlic chilli,\" others reported that the burgers were \"a tad salty and small\" and that the chicken was \"too dry.\" One reviewer even described the signature sauce as \"basically Teriyaki Mayo.\"",
+            "link": "https://www.reddit.com/r/SingaporeEats/comments/1r5zibz/chick_fil_a_bugis/",
+            "signals": "The inclusion of a \"Singapore-exclusive\" sauce suggests a departure from the \"same recipe\" claim, while reports of dryness and excessive saltiness signal quality inconsistencies compared to the US standard.",
+            "sentiment": "Negative/Mixed"
+          },
+          {
+            "id": 2,
+            "title": "Chick-fil-A meal for $12.8",
+            "source": "r/SingaporeEats",
+            "snippet": "A reviewer who had previously eaten Chick-Fil-A in the US noted a discrepancy in quality. While they found the US version \"pretty good,\" they described the \"chicken deluxe at Bugis+\" as \"a tad dry\" for both the spicy and regular varieties.",
+            "link": "https://www.reddit.com/r/SingaporeEats/comments/1po2dbs/chickfila_meal_for_128/",
+            "signals": "The specific mention of dryness in Singapore relative to the US experience highlights a perceived lack of quality parity.",
+            "sentiment": "Negative/Mixed"
+          },
+          {
+            "id": 3,
+            "title": "Has anyone ate Chick-Fil-A in Singapore?",
+            "source": "r/SingaporeEats",
+            "snippet": "Discussions characterize the taste as similar to \"original recipe KFC chicken but not as dry.\" While it is considered unique compared to local staples like the Zinger or McSpicy, some users found it \"average at its best\" and questioned the value compared to other US brands like In-N-Out.",
+            "link": "https://www.reddit.com/r/SingaporeEats/comments/1pzg1al/has_anyone_ate_chickfila_in_singapore/",
+            "signals": "Comparing the product to KFC's \"original recipe\" suggests the flavor profile may not be as distinct or high-quality as US fans claim, and the \"average\" rating indicates it may not meet the high expectations set by its US reputation.",
+            "sentiment": "Negative/Mixed"
+          }
+        ]
+      }
+    }
+  },
+  "low_signal": true,
+  "stream_events": [
+    {
+      "kind": "stage",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "message": "Checking trusted review and forum domains for independent signals."
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "STARTED",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "timestamp": "2026-03-28T06:33:16.048Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "STREAMING_URL",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "streaming_url": "https://ip-54-183-147-16.tetra-data.production.tinyfish.io/tf-6c0c952c-8f56-44fa-a983-bd7413f7289e/stream/0",
+        "timestamp": "2026-03-28T06:33:25.687Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "purpose": "Visit the Google search results page for Chick-Fil-A Singapore quality claims.",
+        "timestamp": "2026-03-28T06:33:30.583Z"
+      }
+    },
+    {
+      "kind": "stage",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "message": "Checking official sources for direct brand claims and hiring posture."
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "STARTED",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "timestamp": "2026-03-28T06:33:37.267Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "purpose": "Try searching on DuckDuckGo because Google is blocked by CAPTCHA.",
+        "timestamp": "2026-03-28T06:33:38.439Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T06:33:52.317Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "purpose": "Broaden the search query to find relevant discussions.",
+        "timestamp": "2026-03-28T06:33:45.848Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "STREAMING_URL",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "streaming_url": "https://ip-54-219-249-216.tetra-data.production.tinyfish.io/tf-184ec16e-49ef-4862-a080-34e6709e3e26/stream/0",
+        "timestamp": "2026-03-28T06:33:46.641Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Visit Google search results for Chick-Fil-A Singapore quality claims.",
+        "timestamp": "2026-03-28T06:33:49.876Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "purpose": "Search for Chick-Fil-A Singapore quality and recipe on specified sites.",
+        "timestamp": "2026-03-28T06:33:51.723Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "purpose": "Press enter to execute the broadened search query.",
+        "timestamp": "2026-03-28T06:33:57.590Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Reconfigure browser to bypass CAPTCHA.",
+        "timestamp": "2026-03-28T06:33:57.557Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "purpose": "Extract the search results from DuckDuckGo.",
+        "timestamp": "2026-03-28T06:34:03.415Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Visit Google search results for Chick-Fil-A Singapore quality claims.",
+        "timestamp": "2026-03-28T06:34:02.851Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Solve CAPTCHA.",
+        "timestamp": "2026-03-28T06:34:13.833Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Understand the image CAPTCHA challenge.",
+        "timestamp": "2026-03-28T06:34:19.132Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "purpose": "Visit the Reddit discussion about Chick-Fil-A in Singapore to find quality/recipe signals.",
+        "timestamp": "2026-03-28T06:34:18.348Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Identify tiles with a bus.",
+        "timestamp": "2026-03-28T06:34:25.720Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "purpose": "Check if the Reddit page has any text content.",
+        "timestamp": "2026-03-28T06:34:25.725Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Map the 9 tiles to the bus images.",
+        "timestamp": "2026-03-28T06:34:33.929Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "purpose": "Search specifically for Tripadvisor or Trustpilot reviews for Chick-Fil-A Singapore.",
+        "timestamp": "2026-03-28T06:34:31.728Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "purpose": "Return to DuckDuckGo search to search for Tripadvisor and Trustpilot reviews.",
+        "timestamp": "2026-03-28T06:34:37.210Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Select tile with bus.",
+        "timestamp": "2026-03-28T06:34:38.264Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "purpose": "Search for Reddit discussions about Chick-Fil-A Singapore quality and recipe.",
+        "timestamp": "2026-03-28T06:34:45.501Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Check if more buses appeared.",
+        "timestamp": "2026-03-28T06:34:43.540Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Select tile with bus.",
+        "timestamp": "2026-03-28T06:34:49.408Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "purpose": "Execute search for Chick-Fil-A Singapore quality on Reddit.",
+        "timestamp": "2026-03-28T06:34:50.468Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Verify CAPTCHA.",
+        "timestamp": "2026-03-28T06:34:53.333Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Get an audio challenge.",
+        "timestamp": "2026-03-28T06:34:59.885Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "purpose": "Extract search result details from DuckDuckGo.",
+        "timestamp": "2026-03-28T06:35:00.640Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Try DuckDuckGo as a fallback for the blocked Google search.",
+        "timestamp": "2026-03-28T06:35:05.065Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T06:35:21.398Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Broaden the search for Chick-Fil-A Singapore quality.",
+        "timestamp": "2026-03-28T06:35:16.859Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Search for Chick-Fil-A Singapore press releases.",
+        "timestamp": "2026-03-28T06:35:22.620Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Search for Chick-Fil-A Singapore press releases without site constraint.",
+        "timestamp": "2026-03-28T06:35:26.797Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T06:35:36.398Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Show results from all sites.",
+        "timestamp": "2026-03-28T06:35:31.930Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "COMPLETE",
+        "run_id": "5d1fe22e-93ef-409e-aee5-649b0460aa33",
+        "status": "COMPLETED",
+        "timestamp": "2026-03-28T06:35:28.860Z",
+        "result": {
+          "chick_fil_a_singapore_reviews": [
+            {
+              "id": 1,
+              "title": "Chick Fil A Bugis+",
+              "source": "r/SingaporeEats",
+              "snippet": "Reviews of the Bugis+ location indicate mixed experiences. While some enjoyed the \"Singapore-exclusive garlic chilli,\" others reported that the burgers were \"a tad salty and small\" and that the chicken was \"too dry.\" One reviewer even described the signature sauce as \"basically Teriyaki Mayo.\"",
+              "link": "https://www.reddit.com/r/SingaporeEats/comments/1r5zibz/chick_fil_a_bugis/",
+              "signals": "The inclusion of a \"Singapore-exclusive\" sauce suggests a departure from the \"same recipe\" claim, while reports of dryness and excessive saltiness signal quality inconsistencies compared to the US standard.",
+              "sentiment": "Negative/Mixed"
+            },
+            {
+              "id": 2,
+              "title": "Chick-fil-A meal for $12.8",
+              "source": "r/SingaporeEats",
+              "snippet": "A reviewer who had previously eaten Chick-Fil-A in the US noted a discrepancy in quality. While they found the US version \"pretty good,\" they described the \"chicken deluxe at Bugis+\" as \"a tad dry\" for both the spicy and regular varieties.",
+              "link": "https://www.reddit.com/r/SingaporeEats/comments/1po2dbs/chickfila_meal_for_128/",
+              "signals": "The specific mention of dryness in Singapore relative to the US experience highlights a perceived lack of quality parity.",
+              "sentiment": "Negative/Mixed"
+            },
+            {
+              "id": 3,
+              "title": "Has anyone ate Chick-Fil-A in Singapore?",
+              "source": "r/SingaporeEats",
+              "snippet": "Discussions characterize the taste as similar to \"original recipe KFC chicken but not as dry.\" While it is considered unique compared to local staples like the Zinger or McSpicy, some users found it \"average at its best\" and questioned the value compared to other US brands like In-N-Out.",
+              "link": "https://www.reddit.com/r/SingaporeEats/comments/1pzg1al/has_anyone_ate_chickfila_in_singapore/",
+              "signals": "Comparing the product to KFC's \"original recipe\" suggests the flavor profile may not be as distinct or high-quality as US fans claim, and the \"average\" rating indicates it may not meet the high expectations set by its US reputation.",
+              "sentiment": "Negative/Mixed"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Understand the empty DuckDuckGo page.",
+        "timestamp": "2026-03-28T06:35:37.396Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Search for Chick-Fil-A Singapore quality and recipe claims.",
+        "timestamp": "2026-03-28T06:35:42.769Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T06:35:53.807Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Search for Chick-Fil-A Singapore quality and recipe claims without exact quotes.",
+        "timestamp": "2026-03-28T06:35:49.853Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Submit the search query.",
+        "timestamp": "2026-03-28T06:35:58.709Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Extract Chick-Fil-A Singapore search results.",
+        "timestamp": "2026-03-28T06:36:05.799Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Visit official Chick-Fil-A Singapore website.",
+        "timestamp": "2026-03-28T06:36:12.011Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Visit Singapore press release for quality claims.",
+        "timestamp": "2026-03-28T06:36:21.862Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Extract quality and recipe claims from the Singapore press release.",
+        "timestamp": "2026-03-28T06:36:28.464Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Check sandwich menu page for recipe parity claims.",
+        "timestamp": "2026-03-28T06:36:33.923Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Extract sandwich recipe and quality claims.",
+        "timestamp": "2026-03-28T06:36:50.394Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Visit About page for quality and recipe parity statements.",
+        "timestamp": "2026-03-28T06:36:57.810Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Extract quality and recipe claims from the About page.",
+        "timestamp": "2026-03-28T06:37:04.289Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Check FAQs for quality parity questions.",
+        "timestamp": "2026-03-28T06:37:10.931Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Check food preparation for quality parity.",
+        "timestamp": "2026-03-28T06:37:17.509Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Extract food preparation details.",
+        "timestamp": "2026-03-28T06:37:26.576Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Search for the specific claim on DuckDuckGo.",
+        "timestamp": "2026-03-28T06:37:32.829Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Return to DuckDuckGo for a more targeted search.",
+        "timestamp": "2026-03-28T06:37:40.682Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Search for the specific phrase on DuckDuckGo.",
+        "timestamp": "2026-03-28T06:37:50.018Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Extract executive quotes from the press release.",
+        "timestamp": "2026-03-28T06:37:55.063Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Check home page for the specific claim.",
+        "timestamp": "2026-03-28T06:38:02.102Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Check Global Impact page for quality consistency.",
+        "timestamp": "2026-03-28T06:38:12.129Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Extract global impact and quality parity details.",
+        "timestamp": "2026-03-28T06:38:18.192Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Extract Global Impact page summary.",
+        "timestamp": "2026-03-28T06:38:22.094Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Check press room for quality/recipe stories.",
+        "timestamp": "2026-03-28T06:38:30.133Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Check Bugis+ opening press release for quality claims.",
+        "timestamp": "2026-03-28T06:38:36.306Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "purpose": "Extract details from the Bugis+ opening press release.",
+        "timestamp": "2026-03-28T06:38:41.953Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T06:39:03.555Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "COMPLETE",
+        "run_id": "3e59a0c3-2423-4103-8470-908e48e44b99",
+        "status": "COMPLETED",
+        "timestamp": "2026-03-28T06:38:55.658Z",
+        "result": {
+          "claim": "Chick-fil-A officially claims that its Singapore outlet maintains the same quality and original recipe as its U.S. restaurants, particularly through the use of its signature ingredients and preparation methods.",
+          "sources": [
+            {
+              "title": "Chick-fil-A Singapore Menu: Chick-fil-A\u00ae Chicken Sandwich",
+              "snippet": "The brand identifies the sandwich as \"Our original Chick-fil-A\u00ae Chicken Sandwich. An original then, an original now,\" specifying it is made with a boneless breast of chicken \"seasoned to perfection, freshly breaded, pressure cooked in 100% refined peanut oil,\" mirroring the exact recipe and process used in the United States.",
+              "link": "https://www.chick-fil-a.com.sg/menu/entrees/chick-fil-a-chicken-sandwich/"
+            },
+            {
+              "title": "Chick-fil-A Singapore Press Room: Singapore Welcomes First Chick-fil-A Restaurant",
+              "snippet": "Chick-fil-A states that the Singapore restaurant provides \"classic menu items\" made with \"boneless chicken breast filets and quality ingredients,\" emphasizing a commitment to the same \"remarkable restaurant experience\" and \"quality ingredients\" that have been central to the brand's operations for over 50 years.",
+              "link": "https://www.chick-fil-a.com.sg/press-room/singapore-welcomes-first-chick-fil-a-restaurant/"
+            },
+            {
+              "title": "About Chick-fil-A Singapore: Commitment to Quality",
+              "snippet": "The brand highlights that Singapore restaurants follow the same \"hand-breading\" process for classic sandwiches and a \"cook less, more often\" approach to ensure fresh preparation without sacrificing the \"delicious taste\" established by founder S. Truett Cathy in 1967.",
+              "link": "https://www.chick-fil-a.com.sg/about/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T06:39:25.699Z"
+      }
+    }
+  ]
+}
