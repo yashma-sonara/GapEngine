@@ -1,0 +1,1359 @@
+{
+  "result": {
+    "gap_score": 2,
+    "verdict": "Likely worth it",
+    "trust_statement": "The claim appears well-supported by the evidence reviewed, with only a small credibility gap. Gap score: 2/10.",
+    "dimension_scores": {
+      "Claim Frequency": 2,
+      "Signal Strength": 0,
+      "Recency": 6,
+      "Severity": 0,
+      "Consistency": 4
+    },
+    "official_claims": [
+      "Official sources for NUS emphasize the value proposition around 'NUS claims a 97% graduate employment rate within 6 months of graduation'.",
+      "Official signal: {\"summary\": \"Official public sources from the National University of Singapore (NUS) report high graduate employment rates, with specific fi.",
+      "Education marketing language is being compared against off-platform feedback."
+    ],
+    "independent_signals": [
+      "Independent signal: {\"research_signals\": [{\"id\": 1, \"source\": \"NUS GES 2026 Community Discussion (Reddit)\", \"title\": \"NUS GES 2026 Discussion\", \"snippet\": \"Grad.",
+      "Reviews, forums, and blogs are weighted as counter-evidence in the gap score.",
+      "The stronger and more repeated the complaints, the higher the risk score climbs."
+    ],
+    "bullets": [
+      "Compared official messaging and independent reviews for NUS.",
+      "Question tested: NUS claims a 97% graduate employment rate within 6 months of graduation",
+      "Five-dimension average produced a 2/10 gap score."
+    ],
+    "model_note": "OpenAI API unavailable, so GapEngine used a deterministic fallback scorer."
+  },
+  "evidence": {
+    "official_sources": {
+      "label": "Official sources",
+      "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Official sources",
+          "url": "https://www.google.com/search?q=%22NUS%22+%22a+97+graduate+employment+rate%22+site%3Anus.edu.sg",
+          "snippet": "{\"summary\": \"Official public sources from the National University of Singapore (NUS) report high graduate employment rates, with specific figures exceeding 97% for certain cohorts and degree programmes within six months of graduation.\", \"sources\": [{\"title\": \"Strong employment outcomes and higher starting salaries for NUS graduates amidst economic uncertainty\", \"snippet\": \"This 2025 news release reports that nearly 97 percent of follow-up graduates from Law were employed within six months of com",
+          "source": "Official sources"
+        }
+      ]
+    },
+    "independent_sources": {
+      "label": "Independent sources",
+      "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Independent sources",
+          "url": "https://www.google.com/search?q=%22NUS%22+Education+%22NUS+claims+a+97%25+graduate+employment+rate+within+6+months+of+graduation%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org+OR+site%3Agov.sg+OR+site%3Anus.edu.sg+OR+site%3Achannelnewsasia.com+OR+site%3Astraitstimes.com%29",
+          "snippet": "{\"research_signals\": [{\"id\": 1, \"source\": \"NUS GES 2026 Community Discussion (Reddit)\", \"title\": \"NUS GES 2026 Discussion\", \"snippet\": \"Graduates on r/nus discuss the latest Graduate Employment Survey (GES) results. While official figures remain high, users highlight a significant \\\"non-response bias,\\\" suggesting that unemployed or underemployed graduates are less likely to participate, which may artificially inflate the reported employment rates.\", \"link\": \"https://old.reddit.com/r/nus/comment",
+          "source": "Independent sources"
+        }
+      ]
+    },
+    "source_sections": {
+      "official_sources": {
+        "key": "official_sources",
+        "label": "Official sources",
+        "query": "\"NUS\" \"a 97 graduate employment rate\" site:nus.edu.sg",
+        "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+        "items": [
+          {
+            "title": "Official sources",
+            "url": "https://www.google.com/search?q=%22NUS%22+%22a+97+graduate+employment+rate%22+site%3Anus.edu.sg",
+            "snippet": "{\"summary\": \"Official public sources from the National University of Singapore (NUS) report high graduate employment rates, with specific figures exceeding 97% for certain cohorts and degree programmes within six months of graduation.\", \"sources\": [{\"title\": \"Strong employment outcomes and higher starting salaries for NUS graduates amidst economic uncertainty\", \"snippet\": \"This 2025 news release reports that nearly 97 percent of follow-up graduates from Law were employed within six months of com",
+            "source": "Official sources"
+          }
+        ],
+        "raw_result": {
+          "summary": "Official public sources from the National University of Singapore (NUS) report high graduate employment rates, with specific figures exceeding 97% for certain cohorts and degree programmes within six months of graduation.",
+          "sources": [
+            {
+              "title": "Strong employment outcomes and higher starting salaries for NUS graduates amidst economic uncertainty",
+              "snippet": "This 2025 news release reports that nearly 97 percent of follow-up graduates from Law were employed within six months of completing their final exams. Additionally, 97.9 per cent of Nursing graduates secured employment in the same period.",
+              "link": "https://news.nus.edu.sg/strong-employment-outcomes-and-higher-starting-salaries-for-nus-graduates-amidst-economic-uncertainty/"
+            },
+            {
+              "title": "NUS graduates highly sought after",
+              "snippet": "This official statement highlights that inaugural graduates from the Business Analytics course and Yale-NUS College achieved employment rates of 97.6 per cent and 93.3 per cent, respectively.",
+              "link": "https://news.nus.edu.sg/nus-graduates-highly-sought-after/"
+            },
+            {
+              "title": "NUS graduates demonstrate resilience in a cautious job market",
+              "snippet": "Reports from 2024 indicate that while the overall employment rate was approximately 90%, specific programmes such as Civil Engineering saw 96.2 per cent of graduates securing employment within six months of their final exams.",
+              "link": "https://news.nus.edu.sg/nus-graduates-demonstrate-resilience-in-a-cautious-job-market/"
+            }
+          ]
+        }
+      },
+      "independent_sources": {
+        "key": "independent_sources",
+        "label": "Independent sources",
+        "query": "\"NUS\" Education \"NUS claims a 97% graduate employment rate within 6 months of graduation\" (site:old.reddit.com OR site:trustpilot.com OR site:tripadvisor.com OR site:glassdoor.com OR site:g2.com OR site:wirecutter.com OR site:consumerreports.org OR site:gov.sg OR site:nus.edu.sg OR site:channelnewsasia.com OR site:straitstimes.com)",
+        "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+        "items": [
+          {
+            "title": "Independent sources",
+            "url": "https://www.google.com/search?q=%22NUS%22+Education+%22NUS+claims+a+97%25+graduate+employment+rate+within+6+months+of+graduation%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org+OR+site%3Agov.sg+OR+site%3Anus.edu.sg+OR+site%3Achannelnewsasia.com+OR+site%3Astraitstimes.com%29",
+            "snippet": "{\"research_signals\": [{\"id\": 1, \"source\": \"NUS GES 2026 Community Discussion (Reddit)\", \"title\": \"NUS GES 2026 Discussion\", \"snippet\": \"Graduates on r/nus discuss the latest Graduate Employment Survey (GES) results. While official figures remain high, users highlight a significant \\\"non-response bias,\\\" suggesting that unemployed or underemployed graduates are less likely to participate, which may artificially inflate the reported employment rates.\", \"link\": \"https://old.reddit.com/r/nus/comment",
+            "source": "Independent sources"
+          }
+        ],
+        "raw_result": {
+          "research_signals": [
+            {
+              "id": 1,
+              "source": "NUS GES 2026 Community Discussion (Reddit)",
+              "title": "NUS GES 2026 Discussion",
+              "snippet": "Graduates on r/nus discuss the latest Graduate Employment Survey (GES) results. While official figures remain high, users highlight a significant \"non-response bias,\" suggesting that unemployed or underemployed graduates are less likely to participate, which may artificially inflate the reported employment rates.",
+              "link": "https://old.reddit.com/r/nus/comments/1rlcza1/nus_ges_2026/",
+              "signal": "Mixed/Negative Signal",
+              "details": "Concerns over survey methodology and non-participation of struggling graduates; reports of \"awful\" conditions in specific sectors like engineering despite high overall statistics."
+            },
+            {
+              "id": 2,
+              "source": "Employment Disparity in Technical Majors (Reddit)",
+              "title": "NUS Data Science full time employment rates only at 65.1%",
+              "snippet": "A focused discussion on the stark contrast between NUS's overall 90%+ employment claims and the reality for specific high-profile majors. Data Science and Analytics (DSA) reportedly saw full-time permanent employment rates as low as 65.1%, performing worse than some arts and social science majors.",
+              "link": "https://old.reddit.com/r/singaporejobs/comments/1rn73sj/nus_data_science_full_time_employment_rates_only/",
+              "signal": "Mixed/Negative Signal",
+              "details": "Market saturation in previously \"hyped\" fields; the \"overall employment\" headline often masks much lower \"full-time permanent\" employment rates."
+            },
+            {
+              "id": 3,
+              "source": "Official Context: 2023/24 Graduate Employment Survey (NUS News)",
+              "title": "NUS graduates command higher starting salaries and maintain strong employment rates amid global uncertainty",
+              "snippet": "The official university report for the 2023/24 cycle claims that over nine in 10 graduates found employment within six months. The report emphasizes rising median salaries and strong performance across 25 courses, including dentistry and nursing, which maintained 100% employment.",
+              "link": "https://news.nus.edu.sg/nus-graduates-command-higher-starting-salaries-maintain-strong-employment-rates-amid-global-uncertainty/",
+              "signal": "Mixed/Negative Signal",
+              "details": "The \"overall employment\" figure includes part-time, temporary, and freelance work (e.g., private tuition or delivery services), which may not align with students' long-term career goals."
+            }
+          ]
+        }
+      }
+    },
+    "meta": {
+      "category": "Education",
+      "subject": "NUS",
+      "claim_or_question": "NUS claims a 97% graduate employment rate within 6 months of graduation",
+      "source": "tinyfish-sse"
+    }
+  },
+  "source_sections": {
+    "official_sources": {
+      "key": "official_sources",
+      "label": "Official sources",
+      "query": "\"NUS\" \"a 97 graduate employment rate\" site:nus.edu.sg",
+      "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Official sources",
+          "url": "https://www.google.com/search?q=%22NUS%22+%22a+97+graduate+employment+rate%22+site%3Anus.edu.sg",
+          "snippet": "{\"summary\": \"Official public sources from the National University of Singapore (NUS) report high graduate employment rates, with specific figures exceeding 97% for certain cohorts and degree programmes within six months of graduation.\", \"sources\": [{\"title\": \"Strong employment outcomes and higher starting salaries for NUS graduates amidst economic uncertainty\", \"snippet\": \"This 2025 news release reports that nearly 97 percent of follow-up graduates from Law were employed within six months of com",
+          "source": "Official sources"
+        }
+      ],
+      "raw_result": {
+        "summary": "Official public sources from the National University of Singapore (NUS) report high graduate employment rates, with specific figures exceeding 97% for certain cohorts and degree programmes within six months of graduation.",
+        "sources": [
+          {
+            "title": "Strong employment outcomes and higher starting salaries for NUS graduates amidst economic uncertainty",
+            "snippet": "This 2025 news release reports that nearly 97 percent of follow-up graduates from Law were employed within six months of completing their final exams. Additionally, 97.9 per cent of Nursing graduates secured employment in the same period.",
+            "link": "https://news.nus.edu.sg/strong-employment-outcomes-and-higher-starting-salaries-for-nus-graduates-amidst-economic-uncertainty/"
+          },
+          {
+            "title": "NUS graduates highly sought after",
+            "snippet": "This official statement highlights that inaugural graduates from the Business Analytics course and Yale-NUS College achieved employment rates of 97.6 per cent and 93.3 per cent, respectively.",
+            "link": "https://news.nus.edu.sg/nus-graduates-highly-sought-after/"
+          },
+          {
+            "title": "NUS graduates demonstrate resilience in a cautious job market",
+            "snippet": "Reports from 2024 indicate that while the overall employment rate was approximately 90%, specific programmes such as Civil Engineering saw 96.2 per cent of graduates securing employment within six months of their final exams.",
+            "link": "https://news.nus.edu.sg/nus-graduates-demonstrate-resilience-in-a-cautious-job-market/"
+          }
+        ]
+      }
+    },
+    "independent_sources": {
+      "key": "independent_sources",
+      "label": "Independent sources",
+      "query": "\"NUS\" Education \"NUS claims a 97% graduate employment rate within 6 months of graduation\" (site:old.reddit.com OR site:trustpilot.com OR site:tripadvisor.com OR site:glassdoor.com OR site:g2.com OR site:wirecutter.com OR site:consumerreports.org OR site:gov.sg OR site:nus.edu.sg OR site:channelnewsasia.com OR site:straitstimes.com)",
+      "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Independent sources",
+          "url": "https://www.google.com/search?q=%22NUS%22+Education+%22NUS+claims+a+97%25+graduate+employment+rate+within+6+months+of+graduation%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org+OR+site%3Agov.sg+OR+site%3Anus.edu.sg+OR+site%3Achannelnewsasia.com+OR+site%3Astraitstimes.com%29",
+          "snippet": "{\"research_signals\": [{\"id\": 1, \"source\": \"NUS GES 2026 Community Discussion (Reddit)\", \"title\": \"NUS GES 2026 Discussion\", \"snippet\": \"Graduates on r/nus discuss the latest Graduate Employment Survey (GES) results. While official figures remain high, users highlight a significant \\\"non-response bias,\\\" suggesting that unemployed or underemployed graduates are less likely to participate, which may artificially inflate the reported employment rates.\", \"link\": \"https://old.reddit.com/r/nus/comment",
+          "source": "Independent sources"
+        }
+      ],
+      "raw_result": {
+        "research_signals": [
+          {
+            "id": 1,
+            "source": "NUS GES 2026 Community Discussion (Reddit)",
+            "title": "NUS GES 2026 Discussion",
+            "snippet": "Graduates on r/nus discuss the latest Graduate Employment Survey (GES) results. While official figures remain high, users highlight a significant \"non-response bias,\" suggesting that unemployed or underemployed graduates are less likely to participate, which may artificially inflate the reported employment rates.",
+            "link": "https://old.reddit.com/r/nus/comments/1rlcza1/nus_ges_2026/",
+            "signal": "Mixed/Negative Signal",
+            "details": "Concerns over survey methodology and non-participation of struggling graduates; reports of \"awful\" conditions in specific sectors like engineering despite high overall statistics."
+          },
+          {
+            "id": 2,
+            "source": "Employment Disparity in Technical Majors (Reddit)",
+            "title": "NUS Data Science full time employment rates only at 65.1%",
+            "snippet": "A focused discussion on the stark contrast between NUS's overall 90%+ employment claims and the reality for specific high-profile majors. Data Science and Analytics (DSA) reportedly saw full-time permanent employment rates as low as 65.1%, performing worse than some arts and social science majors.",
+            "link": "https://old.reddit.com/r/singaporejobs/comments/1rn73sj/nus_data_science_full_time_employment_rates_only/",
+            "signal": "Mixed/Negative Signal",
+            "details": "Market saturation in previously \"hyped\" fields; the \"overall employment\" headline often masks much lower \"full-time permanent\" employment rates."
+          },
+          {
+            "id": 3,
+            "source": "Official Context: 2023/24 Graduate Employment Survey (NUS News)",
+            "title": "NUS graduates command higher starting salaries and maintain strong employment rates amid global uncertainty",
+            "snippet": "The official university report for the 2023/24 cycle claims that over nine in 10 graduates found employment within six months. The report emphasizes rising median salaries and strong performance across 25 courses, including dentistry and nursing, which maintained 100% employment.",
+            "link": "https://news.nus.edu.sg/nus-graduates-command-higher-starting-salaries-maintain-strong-employment-rates-amid-global-uncertainty/",
+            "signal": "Mixed/Negative Signal",
+            "details": "The \"overall employment\" figure includes part-time, temporary, and freelance work (e.g., private tuition or delivery services), which may not align with students' long-term career goals."
+          }
+        ]
+      }
+    }
+  },
+  "low_signal": true,
+  "stream_events": [
+    {
+      "kind": "stage",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "message": "Checking trusted review and forum domains for independent signals."
+    },
+    {
+      "kind": "stage",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "message": "Checking official sources for direct brand claims and hiring posture."
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "STARTED",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "timestamp": "2026-03-28T07:04:32.397Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "STARTED",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "timestamp": "2026-03-28T07:04:34.251Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:04:47.397Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:04:49.251Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "STREAMING_URL",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "streaming_url": "https://ip-54-219-249-216.tetra-data.production.tinyfish.io/tf-f6224fb7-65a5-4208-a9c3-5e6ad9a03bd1/stream/0",
+        "timestamp": "2026-03-28T07:04:43.655Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "STREAMING_URL",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "streaming_url": "https://ip-54-219-249-216.tetra-data.production.tinyfish.io/tf-e382ee82-9658-41c3-bc3b-51412f455bf4/stream/0",
+        "timestamp": "2026-03-28T07:04:44.505Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Navigate to the specified Google search results page.",
+        "timestamp": "2026-03-28T07:04:46.232Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Visit the Google search results page to find information about NUS graduate employment rate.",
+        "timestamp": "2026-03-28T07:04:49.025Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Bypass Google CAPTCHA to access search results.",
+        "timestamp": "2026-03-28T07:04:51.477Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Resolve Google CAPTCHA to access search results for NUS education research.",
+        "timestamp": "2026-03-28T07:04:53.619Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Visit the Google search results again after reconfiguration.",
+        "timestamp": "2026-03-28T07:04:59.209Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Try visiting the Google search results page again after reconfiguration.",
+        "timestamp": "2026-03-28T07:05:00.454Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Extract details about the search results related to NUS graduate employment rate.",
+        "timestamp": "2026-03-28T07:05:14.477Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:05:23.617Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Check the second page of search results for forum discussions or reviews on Reddit or Glassdoor.",
+        "timestamp": "2026-03-28T07:05:25.464Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:05:38.617Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Search specifically for Reddit discussions about NUS graduate employment rate to get public sentiment.",
+        "timestamp": "2026-03-28T07:05:33.262Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Try a broader search for Reddit discussions about NUS graduate employment.",
+        "timestamp": "2026-03-28T07:05:39.134Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:05:53.617Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Return to the original search results to find more diverse sources.",
+        "timestamp": "2026-03-28T07:05:48.578Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Use DuckDuckGo to search for the same query since Google is blocking me.",
+        "timestamp": "2026-03-28T07:05:53.497Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Search for NUS graduate employment rate with a broader query.",
+        "timestamp": "2026-03-28T07:06:03.387Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:06:14.731Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Search with a broader query.",
+        "timestamp": "2026-03-28T07:06:09.808Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Execute the search query.",
+        "timestamp": "2026-03-28T07:06:14.454Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Search for NUS graduate employment rate on DuckDuckGo.",
+        "timestamp": "2026-03-28T07:06:20.305Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:06:29.730Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Check if search results are displayed.",
+        "timestamp": "2026-03-28T07:06:26.914Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Visit the NUS newsroom page to check for the 97% employment rate claim.",
+        "timestamp": "2026-03-28T07:06:36.175Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:06:44.731Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:06:58.767Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:06:59.731Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:07:13.767Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:07:14.732Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Extract 97% employment rate claim and supporting details.",
+        "timestamp": "2026-03-28T07:07:10.550Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Visit another potential source for the 97% employment claim.",
+        "timestamp": "2026-03-28T07:07:18.076Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Try visiting the NUS news page again.",
+        "timestamp": "2026-03-28T07:07:22.300Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:07:29.732Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:07:44.447Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:07:44.732Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Extract 97% employment rate claim from this page.",
+        "timestamp": "2026-03-28T07:07:44.327Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "STREAMING_URL",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "streaming_url": "https://ip-52-53-166-207.tetra-data.production.tinyfish.io/tf-67162c92-ce55-4986-aab3-bebbba1eb1d6/stream/0",
+        "timestamp": "2026-03-28T07:07:50.488Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Search specifically for the 97% claim.",
+        "timestamp": "2026-03-28T07:07:49.234Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Visit Google Search to find sources about NUS graduate employment rate claims.",
+        "timestamp": "2026-03-28T07:07:55.622Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Search for the exact phrase on DuckDuckGo.",
+        "timestamp": "2026-03-28T07:07:57.427Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Search for graduate employment rate on NUS site.",
+        "timestamp": "2026-03-28T07:08:02.168Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Bypass Google Search CAPTCHA.",
+        "timestamp": "2026-03-28T07:08:02.546Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Search for the phrase globally.",
+        "timestamp": "2026-03-28T07:08:08.283Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Search with a broader query.",
+        "timestamp": "2026-03-28T07:08:12.254Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:08:24.388Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Visit Google Search after reconfiguring browser.",
+        "timestamp": "2026-03-28T07:08:14.830Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Search for graduate employment survey results.",
+        "timestamp": "2026-03-28T07:08:16.598Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Search for 97% employment on NUS site.",
+        "timestamp": "2026-03-28T07:08:21.551Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Search for 97 percent employment on NUS site.",
+        "timestamp": "2026-03-28T07:08:26.305Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Visit NUS newsroom to use internal search.",
+        "timestamp": "2026-03-28T07:08:30.027Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:08:40.120Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Click the CAPTCHA checkbox to proceed.",
+        "timestamp": "2026-03-28T07:08:39.441Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:08:50.912Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Try the audio challenge as an alternative to the image challenge.",
+        "timestamp": "2026-03-28T07:08:47.758Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Visit NUS news homepage.",
+        "timestamp": "2026-03-28T07:08:48.482Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Wait a bit to see if the block clears.",
+        "timestamp": "2026-03-28T07:08:54.045Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:09:11.384Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Check press releases for 97% employment rate.",
+        "timestamp": "2026-03-28T07:09:03.165Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Use DuckDuckGo as an alternative search engine since Google is blocked by CAPTCHA.",
+        "timestamp": "2026-03-28T07:09:02.325Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Check this news item for the 97% claim.",
+        "timestamp": "2026-03-28T07:09:12.203Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Try a simpler search on Google to avoid bot detection.",
+        "timestamp": "2026-03-28T07:09:13.099Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:09:33.430Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Try searching directly on old.reddit.com since Google and DuckDuckGo are blocked.",
+        "timestamp": "2026-03-28T07:09:32.896Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:09:48.431Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Extract 97% employment rate claim.",
+        "timestamp": "2026-03-28T07:09:45.406Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:09:53.991Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Explore a mixed/negative signal regarding NUS employment rates.",
+        "timestamp": "2026-03-28T07:09:49.826Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Try Google again with the reconfigured browser.",
+        "timestamp": "2026-03-28T07:09:51.227Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Get details on mixed/negative employment signals for specific NUS majors.",
+        "timestamp": "2026-03-28T07:09:54.961Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Search for the 97% claim globally.",
+        "timestamp": "2026-03-28T07:10:04.128Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Extract details and snippets from the Reddit thread about low employment in specific NUS majors.",
+        "timestamp": "2026-03-28T07:10:01.745Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Search on DuckDuckGo again for 2022 results.",
+        "timestamp": "2026-03-28T07:10:09.732Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Find official or news-based sources on Reddit.",
+        "timestamp": "2026-03-28T07:10:16.470Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Check 2022 employment prospects news.",
+        "timestamp": "2026-03-28T07:10:22.590Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:10:39.948Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Extract mixed/negative signals from a recent NUS Graduate Employment Survey discussion.",
+        "timestamp": "2026-03-28T07:10:31.561Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:10:46.653Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Extract employment rate for Class of 2022.",
+        "timestamp": "2026-03-28T07:10:45.384Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Find an official NUS news release for the 97% claim.",
+        "timestamp": "2026-03-28T07:10:47.146Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Check 2023 graduates employment rate.",
+        "timestamp": "2026-03-28T07:10:50.488Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Visit the official NUS news release mentioned on Reddit.",
+        "timestamp": "2026-03-28T07:10:58.736Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Extract graduate employment rate.",
+        "timestamp": "2026-03-28T07:11:04.338Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "purpose": "Final search for the 97% claim.",
+        "timestamp": "2026-03-28T07:11:16.051Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:11:23.341Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Extract official employment rate claims and context from the NUS news release.",
+        "timestamp": "2026-03-28T07:11:25.719Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:11:37.459Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Find a news article from Straits Times about the 97% employment claim.",
+        "timestamp": "2026-03-28T07:11:31.147Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Try a simple Google search to get the official claim.",
+        "timestamp": "2026-03-28T07:11:41.222Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "COMPLETE",
+        "run_id": "9c06c5b2-4bfc-4254-aa19-f4ce3f980bb5",
+        "status": "COMPLETED",
+        "timestamp": "2026-03-28T07:11:38.334Z",
+        "result": {
+          "summary": "Official public sources from the National University of Singapore (NUS) report high graduate employment rates, with specific figures exceeding 97% for certain cohorts and degree programmes within six months of graduation.",
+          "sources": [
+            {
+              "title": "Strong employment outcomes and higher starting salaries for NUS graduates amidst economic uncertainty",
+              "snippet": "This 2025 news release reports that nearly 97 percent of follow-up graduates from Law were employed within six months of completing their final exams. Additionally, 97.9 per cent of Nursing graduates secured employment in the same period.",
+              "link": "https://news.nus.edu.sg/strong-employment-outcomes-and-higher-starting-salaries-for-nus-graduates-amidst-economic-uncertainty/"
+            },
+            {
+              "title": "NUS graduates highly sought after",
+              "snippet": "This official statement highlights that inaugural graduates from the Business Analytics course and Yale-NUS College achieved employment rates of 97.6 per cent and 93.3 per cent, respectively.",
+              "link": "https://news.nus.edu.sg/nus-graduates-highly-sought-after/"
+            },
+            {
+              "title": "NUS graduates demonstrate resilience in a cautious job market",
+              "snippet": "Reports from 2024 indicate that while the overall employment rate was approximately 90%, specific programmes such as Civil Engineering saw 96.2 per cent of graduates securing employment within six months of their final exams.",
+              "link": "https://news.nus.edu.sg/nus-graduates-demonstrate-resilience-in-a-cautious-job-market/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:12:02.692Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:12:02.691Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:12:17.691Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Try searching on Glassdoor for public reviews/complaints.",
+        "timestamp": "2026-03-28T07:12:09.928Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Find a third source on Reddit regarding the 97% employment claim.",
+        "timestamp": "2026-03-28T07:12:23.325Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "purpose": "Get mixed/negative signals specifically about the 97% employment claim.",
+        "timestamp": "2026-03-28T07:12:38.679Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:12:58.705Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "COMPLETE",
+        "run_id": "41d58d87-e08f-49e8-8103-a74fa7b34da3",
+        "status": "COMPLETED",
+        "timestamp": "2026-03-28T07:13:00.048Z",
+        "result": {
+          "research_signals": [
+            {
+              "id": 1,
+              "source": "NUS GES 2026 Community Discussion (Reddit)",
+              "title": "NUS GES 2026 Discussion",
+              "snippet": "Graduates on r/nus discuss the latest Graduate Employment Survey (GES) results. While official figures remain high, users highlight a significant \"non-response bias,\" suggesting that unemployed or underemployed graduates are less likely to participate, which may artificially inflate the reported employment rates.",
+              "link": "https://old.reddit.com/r/nus/comments/1rlcza1/nus_ges_2026/",
+              "signal": "Mixed/Negative Signal",
+              "details": "Concerns over survey methodology and non-participation of struggling graduates; reports of \"awful\" conditions in specific sectors like engineering despite high overall statistics."
+            },
+            {
+              "id": 2,
+              "source": "Employment Disparity in Technical Majors (Reddit)",
+              "title": "NUS Data Science full time employment rates only at 65.1%",
+              "snippet": "A focused discussion on the stark contrast between NUS's overall 90%+ employment claims and the reality for specific high-profile majors. Data Science and Analytics (DSA) reportedly saw full-time permanent employment rates as low as 65.1%, performing worse than some arts and social science majors.",
+              "link": "https://old.reddit.com/r/singaporejobs/comments/1rn73sj/nus_data_science_full_time_employment_rates_only/",
+              "signal": "Mixed/Negative Signal",
+              "details": "Market saturation in previously \"hyped\" fields; the \"overall employment\" headline often masks much lower \"full-time permanent\" employment rates."
+            },
+            {
+              "id": 3,
+              "source": "Official Context: 2023/24 Graduate Employment Survey (NUS News)",
+              "title": "NUS graduates command higher starting salaries and maintain strong employment rates amid global uncertainty",
+              "snippet": "The official university report for the 2023/24 cycle claims that over nine in 10 graduates found employment within six months. The report emphasizes rising median salaries and strong performance across 25 courses, including dentistry and nursing, which maintained 100% employment.",
+              "link": "https://news.nus.edu.sg/nus-graduates-command-higher-starting-salaries-maintain-strong-employment-rates-amid-global-uncertainty/",
+              "signal": "Mixed/Negative Signal",
+              "details": "The \"overall employment\" figure includes part-time, temporary, and freelance work (e.g., private tuition or delivery services), which may not align with students' long-term career goals."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:13:24.317Z"
+      }
+    }
+  ]
+}
