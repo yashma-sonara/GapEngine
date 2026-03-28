@@ -89,7 +89,7 @@ class TinyFishClient:
 
         req = request.Request(endpoint, data=payload, headers=headers, method="POST")
         try:
-            with request.urlopen(req, timeout=20) as response:
+            with request.urlopen(req) as response:
                 raw = json.loads(response.read().decode("utf-8"))
         except (error.URLError, error.HTTPError, TimeoutError, json.JSONDecodeError):
             return None

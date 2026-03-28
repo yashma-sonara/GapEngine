@@ -1,4 +1,4 @@
-const categories = ["Entertainment", "Travel", "Tech", "Consumer", "Finance", "Health"];
+const categories = ["Entertainment", "Tech", "Government", "Food and Beverage", "Transport", "Education"];
 const demos = [
   { category: "Travel", subject: "Disney Cruise", claim: "Is it worth the price?" },
   { category: "Tech", subject: "Notion AI", claim: "Does it actually save teams time?" },
@@ -6,23 +6,63 @@ const demos = [
 ];
 
 function App() {
-  const { useMemo, useState } = React;
+  const { useEffect, useMemo, useRef, useState } = React;
   const [form, setForm] = useState(demos[0]);
   const [events, setEvents] = useState([]);
   const [report, setReport] = useState(null);
+  const [pendingReport, setPendingReport] = useState(null);
   const [isRunning, setIsRunning] = useState(false);
   const [error, setError] = useState("");
+  const replayTimersRef = useRef([]);
+
+  useEffect(() => () => {
+    replayTimersRef.current.forEach((timerId) => window.clearTimeout(timerId));
+    replayTimersRef.current = [];
+  }, []);
 
   const progressEvents = useMemo(
     () => events.filter((event) => event.kind === "stage" || event.kind === "tinyfish_event"),
     [events]
   );
 
+  function clearReplayTimers() {
+    replayTimersRef.current.forEach((timerId) => window.clearTimeout(timerId));
+    replayTimersRef.current = [];
+  }
+
+  function replayCachedEvents(streamEvents, finalReport) {
+    clearReplayTimers();
+    setEvents([]);
+    setReport(null);
+    setPendingReport(finalReport);
+
+    if (!streamEvents.length) {
+      setReport(finalReport);
+      setPendingReport(null);
+      return;
+    }
+
+    streamEvents.forEach((streamEvent, index) => {
+      const timerId = window.setTimeout(() => {
+        setEvents((current) => [...current, streamEvent]);
+      }, (index + 1) * 2000);
+      replayTimersRef.current.push(timerId);
+    });
+
+    const revealTimerId = window.setTimeout(() => {
+      setReport(finalReport);
+      setPendingReport(null);
+    }, streamEvents.length * 2000 + 50);
+    replayTimersRef.current.push(revealTimerId);
+  }
+
   async function runAnalysis(event) {
     event.preventDefault();
     setIsRunning(true);
+    clearReplayTimers();
     setEvents([]);
     setReport(null);
+    setPendingReport(null);
     setError("");
 
     try {
@@ -53,7 +93,11 @@ function App() {
           const parsed = parseSseChunk(chunk);
           if (!parsed) continue;
           if (parsed.event === "final_report") {
-            setReport(parsed.data);
+            if (Array.isArray(parsed.data.stream_events)) {
+              replayCachedEvents(parsed.data.stream_events, parsed.data);
+            } else {
+              setReport(parsed.data);
+            }
           } else if (parsed.event === "error") {
             setError(parsed.data.message || "Unknown error");
           } else {
@@ -149,7 +193,13 @@ function App() {
 
         <article className="panel panel-score">
           <div className="panel-header"><h2>Gap verdict</h2></div>
-          {!report && <p className="muted">The final verdict appears here after TinyFish finishes.</p>}
+          {!report && (
+            <p className="muted">
+              {pendingReport
+                ? "Waiting for the TinyFish live stream to finish before revealing the verdict."
+                : "The final verdict appears here after TinyFish finishes."}
+            </p>
+          )}
           {report && (
             <>
               <div className="score-row">
@@ -175,22 +225,22 @@ function App() {
       <section className="grid">
         <article className="panel">
           <div className="panel-header"><h2>Official claims</h2></div>
-          {report?.result?.official_claims?.map((item, index) => <div className="evidence-card" key={index}>{item}</div>) || <p className="muted">Official brand claims will appear here.</p>}
+          {report?.result?.official_claims?.map((item, index) => <div className="evidence-card" key={index}>{item}</div>) || <p className="muted">{pendingReport ? "Official claims will unlock after the TinyFish stream completes." : "Official brand claims will appear here."}</p>}
         </article>
         <article className="panel">
           <div className="panel-header"><h2>Independent signals</h2></div>
-          {report?.result?.independent_signals?.map((item, index) => <div className="evidence-card danger" key={index}>{item}</div>) || <p className="muted">Counter-signals from reviews and forums will appear here.</p>}
+          {report?.result?.independent_signals?.map((item, index) => <div className="evidence-card danger" key={index}>{item}</div>) || <p className="muted">{pendingReport ? "Independent signals will unlock after the TinyFish stream completes." : "Counter-signals from reviews and forums will appear here."}</p>}
         </article>
       </section>
 
       <section className="grid">
         <article className="panel">
           <div className="panel-header"><h2>Official source evidence</h2></div>
-          <EvidenceList items={report?.evidence?.official_sources?.items || []} />
+          <EvidenceList items={report?.evidence?.official_sources?.items || []} placeholder={pendingReport ? "Official source evidence will appear after the TinyFish stream completes." : "Evidence cards will appear here after a run."} />
         </article>
         <article className="panel">
           <div className="panel-header"><h2>Independent source evidence</h2></div>
-          <EvidenceList items={report?.evidence?.independent_sources?.items || []} />
+          <EvidenceList items={report?.evidence?.independent_sources?.items || []} placeholder={pendingReport ? "Independent source evidence will appear after the TinyFish stream completes." : "Evidence cards will appear here after a run."} />
         </article>
       </section>
 
@@ -203,11 +253,15 @@ function App() {
                 <strong>{section.label}</strong>
                 <p className="muted">{section.summary}</p>
               </div>
-              <EvidenceList items={section.items || []} />
+              <EvidenceList items={section.items || []} placeholder="Evidence cards will appear here after a run." />
             </div>
           ))}
           {!Object.values(report?.source_sections || {}).length && (
-            <p className="muted">Each public source scan will appear here: careers, LinkedIn, Google News/Search, and Reddit.</p>
+            <p className="muted">
+              {pendingReport
+                ? "Source-by-source evidence will unlock after the TinyFish stream completes."
+                : "Each public source scan will appear here: careers, LinkedIn, Google News/Search, and Reddit."}
+            </p>
           )}
         </div>
       </section>
@@ -215,8 +269,8 @@ function App() {
   );
 }
 
-function EvidenceList({ items }) {
-  if (!items.length) return <p className="muted">Evidence cards will appear here after a run.</p>;
+function EvidenceList({ items, placeholder = "Evidence cards will appear here after a run." }) {
+  if (!items.length) return <p className="muted">{placeholder}</p>;
   return items.map((item, index) => (
     <div className="source-card" key={index}>
       <div className="source-head"><strong>{item.title}</strong><span>{item.source}</span></div>

@@ -34,12 +34,6 @@ def build_parser() -> argparse.ArgumentParser:
         default=5,
         help="Polling interval for async mode.",
     )
-    parser.add_argument(
-        "--timeout-seconds",
-        type=int,
-        default=180,
-        help="Timeout for async mode.",
-    )
     return parser
 
 
@@ -71,10 +65,9 @@ def main() -> None:
     print(f"Run ID: {run_id}")
     print("-" * 80)
 
-    deadline = time.time() + args.timeout_seconds
     last_status = None
 
-    while time.time() < deadline:
+    while True:
         runs = client.get_runs_batch([run_id])
         run = runs[0] if runs else {}
         status = str(run.get("status") or "UNKNOWN")
@@ -89,8 +82,6 @@ def main() -> None:
             return
 
         time.sleep(args.poll_seconds)
-
-    print(f"Timed out after {args.timeout_seconds} seconds while waiting for run {run_id}.")
 
 
 if __name__ == "__main__":

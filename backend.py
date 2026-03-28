@@ -3,6 +3,7 @@ from __future__ import annotations
 import asyncio
 import json
 import logging
+import os
 import re
 from pathlib import Path
 from typing import Any, AsyncGenerator, Callable, Dict, List
@@ -41,9 +42,37 @@ OFFICIAL_ITEM_LIMIT = 3
 INDEPENDENT_ITEM_LIMIT = 3
 PRELOAD_OFFICIAL_ITEM_LIMIT = 5
 PRELOAD_INDEPENDENT_ITEM_LIMIT = 6
-TINYFISH_TIMEOUT_SECONDS = 12
-PRELOAD_REQUEST_TIMEOUT_SECONDS = 24 * 60 * 60
 CACHE_ONLY_MODE = "cache_only"
+CLAIM_KEY_PHRASE_FALLBACK_WORDS = {
+    "claims",
+    "claim",
+    "offers",
+    "offer",
+    "offering",
+    "with",
+    "within",
+    "that",
+    "this",
+    "from",
+    "their",
+    "there",
+    "about",
+    "into",
+    "onto",
+    "have",
+    "has",
+    "had",
+    "more",
+    "most",
+    "very",
+    "same",
+    "than",
+    "ever",
+    "best",
+    "one",
+    "world",
+    "months",
+}
 
 CATEGORY_EXTRA_DOMAINS = {
     "Government": (
@@ -158,12 +187,14 @@ async def analyze(
             client = TinyFishWebAgentClient(api_integration="gapengine-live")
             queue: asyncio.Queue[str] = asyncio.Queue()
             loop = asyncio.get_running_loop()
+            stream_events: List[Dict[str, Any]] = []
+
+            def enqueue_event(event_name: str, event_payload: Dict[str, Any]) -> None:
+                stream_events.append({"kind": event_name, **event_payload})
+                queue.put_nowait(_sse_event(event_name, event_payload))
 
             def emit(event_name: str, event_payload: Dict[str, Any]) -> None:
-                loop.call_soon_threadsafe(
-                    queue.put_nowait,
-                    _sse_event(event_name, event_payload),
-                )
+                loop.call_soon_threadsafe(enqueue_event, event_name, event_payload)
 
             official_task = asyncio.create_task(
                 _run_source_scan_async(
@@ -239,6 +270,7 @@ async def analyze(
                 "evidence": evidence,
                 "source_sections": source_sections,
                 "low_signal": low_signal,
+                "stream_events": stream_events,
             }
             _save_cached_result(payload.subject, final_payload)
 
@@ -283,43 +315,7 @@ async def _run_source_scan_async(
             preload_mode,
             emit,
         )
-        if preload_mode:
-            return await task
-
-        return await asyncio.wait_for(task, timeout=TINYFISH_TIMEOUT_SECONDS)
-    except asyncio.TimeoutError:
-        logger.warning(
-            "TinyFish timed out for %s after %s seconds",
-            stage,
-            TINYFISH_TIMEOUT_SECONDS,
-        )
-        emit(
-            "tinyfish_event",
-            {
-                "stage": stage,
-                "label": SOURCE_BUCKETS[stage],
-                "tinyfish_event": {
-                    "type": "TIMEOUT",
-                    "purpose": (
-                        f"Timed out after {TINYFISH_TIMEOUT_SECONDS} "
-                        "seconds. Using partial or fallback evidence."
-                    ),
-                },
-            },
-        )
-        query = _search_query(
-            stage=stage,
-            category=category,
-            subject=subject,
-            claim_or_question=claim_or_question,
-        )
-        url = f"https://www.google.com/search?q={quote_plus(query)}"
-        return _fallback_section(
-            stage=stage,
-            query=query,
-            fallback_url=url,
-            reason="Timed out before TinyFish returned structured evidence.",
-        )
+        return await task
     except TinyFishAPIError as exc:
         logger.warning("TinyFish failed for %s: %s", stage, exc)
         emit(
@@ -357,11 +353,17 @@ def _run_source_scan_blocking(
     preload_mode: bool,
     emit: Callable[[str, Dict[str, Any]], None],
 ) -> Dict[str, Any]:
+    claim_key_phrase = (
+        _claim_key_phrase(subject, claim_or_question)
+        if stage == "official_sources"
+        else None
+    )
     query = _search_query(
         stage=stage,
         category=category,
         subject=subject,
         claim_or_question=claim_or_question,
+        claim_key_phrase=claim_key_phrase,
     )
     url = f"https://www.google.com/search?q={quote_plus(query)}"
     goal = _goal(
@@ -370,6 +372,7 @@ def _run_source_scan_blocking(
         subject=subject,
         claim_or_question=claim_or_question,
         preload_mode=preload_mode,
+        claim_key_phrase=claim_key_phrase,
     )
 
     complete_event: Dict[str, Any] | None = None
@@ -386,11 +389,6 @@ def _run_source_scan_blocking(
     for event in client.run_sse(
         url=url,
         goal=goal,
-        request_timeout_seconds=(
-            PRELOAD_REQUEST_TIMEOUT_SECONDS
-            if preload_mode
-            else TINYFISH_TIMEOUT_SECONDS
-        ),
     ):
         emit(
             "tinyfish_event",
@@ -505,23 +503,20 @@ def _build_evidence(
     }
 
 
-def _search_query(*, stage: str, category: str, subject: str, claim_or_question: str) -> str:
+def _search_query(
+    *,
+    stage: str,
+    category: str,
+    subject: str,
+    claim_or_question: str,
+    claim_key_phrase: str | None = None,
+) -> str:
     extra_domains = CATEGORY_EXTRA_DOMAINS.get(category, ())
 
     if stage == "official_sources":
-        domain_hint = _domain_hint(subject)
-        official_domains = [
-            f"site:{domain_hint}",
-            "site:linkedin.com/company",
-            f"site:{domain_hint}/careers",
-            f"site:{domain_hint}/jobs",
-            f"site:{domain_hint}/news",
-        ]
-        official_domains.extend(f"site:{domain}" for domain in extra_domains)
-        return (
-            f'"{subject}" {category} "{claim_or_question}" '
-            f'({" OR ".join(official_domains)})'
-        )
+        key_phrase = claim_key_phrase or _claim_key_phrase(subject, claim_or_question)
+        official_domain = _official_domain(subject, category, claim_or_question)
+        return f'"{subject}" "{key_phrase}" site:{official_domain}'
 
     trusted_domains = list(TRUSTED_INDEPENDENT_DOMAINS)
     trusted_domains.extend(extra_domains)
@@ -536,11 +531,15 @@ def _goal(
     subject: str,
     claim_or_question: str,
     preload_mode: bool,
+    claim_key_phrase: str | None = None,
 ) -> str:
     if stage == "official_sources":
+        key_phrase = claim_key_phrase or _claim_key_phrase(subject, claim_or_question)
         return (
             f"Research official public sources for {subject} in the {category} category. "
-            f"Focus on direct brand claims, value promises, hiring posture, and support for the claim: {claim_or_question}. "
+            f"Search for official pages, press releases, or statements from {subject} that are specifically about {key_phrase}. "
+            "Ignore careers pages, job listings, investor relations pages, and unrelated product pages. "
+            f"Focus on direct brand claims and support for the claim: {claim_or_question}. "
             f"Return at most {_official_claim_limit(preload_mode)} concise items with titles, snippets, and links. "
             "If a page is blocked, empty, or too slow, fall back to the Google search snippet text instead of retrying the page."
         )
@@ -739,6 +738,148 @@ def _independent_signal_limit(preload_mode: bool) -> int:
 def _domain_hint(subject: str) -> str:
     normalized = re.sub(r"[^a-z0-9]", "", subject.lower())
     return f"{normalized}.com" if normalized else "example.com"
+
+
+def _official_domain(subject: str, category: str, claim_or_question: str) -> str:
+    subject_lower = subject.lower()
+    claim_lower = claim_or_question.lower()
+
+    if "nus" in subject_lower:
+        return "nus.edu.sg"
+    if "singapore healthcare" in subject_lower or "healthcare system" in claim_lower:
+        return "gov.sg"
+
+    category_domains = CATEGORY_EXTRA_DOMAINS.get(category, ())
+    if category_domains:
+        subject_tokens = {
+            token
+            for token in re.findall(r"[a-z0-9]+", subject_lower)
+            if len(token) >= 3
+        }
+        for domain in category_domains:
+            if any(token in domain for token in subject_tokens):
+                return domain
+
+    return _domain_hint(subject)
+
+
+def _claim_key_phrase(subject: str, claim_or_question: str) -> str:
+    llm_phrase = _claim_key_phrase_with_openai(subject, claim_or_question)
+    if llm_phrase:
+        return llm_phrase
+    return _claim_key_phrase_fallback(subject, claim_or_question)
+
+
+def _claim_key_phrase_with_openai(subject: str, claim_or_question: str) -> str | None:
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        return None
+
+    try:
+        from openai import OpenAI
+    except Exception:
+        return None
+
+    model = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+    client = OpenAI(api_key=api_key)
+    prompt = f"""
+Extract a 3-5 word key phrase capturing what this claim is actually about.
+Return strict JSON with one field:
+{{"key_phrase":"..."}}
+
+Subject: {subject}
+Claim: {claim_or_question}
+
+Examples:
+- "NUS claims a 97% graduate employment rate within 6 months of graduation" -> "graduate employment rate"
+- "Apple claims the iPhone 16 camera system is the biggest leap in mobile photography ever" -> "iPhone 16 camera system"
+- "Grab claims it offers the most affordable and transparent pricing" -> "affordable transparent pricing"
+"""
+
+    try:
+        response = client.responses.create(
+            model=model,
+            input=prompt,
+            max_output_tokens=40,
+        )
+    except Exception:
+        return None
+
+    text = _extract_response_text(response)
+    if not text:
+        return None
+
+    try:
+        parsed = json.loads(text)
+    except json.JSONDecodeError:
+        return None
+
+    raw_phrase = parsed.get("key_phrase")
+    if not isinstance(raw_phrase, str):
+        return None
+
+    return _normalize_key_phrase(raw_phrase)
+
+
+def _claim_key_phrase_fallback(subject: str, claim_or_question: str) -> str:
+    claim = re.sub(r"\s+", " ", claim_or_question.strip())
+    patterns = (
+        r"claims?\s+(?:that\s+)?(?:it|they|its|their|there is|there are)\s+(.*)",
+        r"claims?\s+(.*)",
+        r"is\s+(.*)",
+        r"are\s+(.*)",
+    )
+
+    candidate = claim
+    for pattern in patterns:
+        match = re.search(pattern, claim, flags=re.IGNORECASE)
+        if match:
+            candidate = match.group(1).strip(" .,:;!?")
+            break
+
+    subject_tokens = {
+        token
+        for token in re.findall(r"[a-z0-9]+", subject.lower())
+        if token
+    }
+    words = re.findall(r"[A-Za-z0-9]+", candidate)
+    kept_words: List[str] = []
+    for word in words:
+        lowered = word.lower()
+        if lowered in CLAIM_KEY_PHRASE_FALLBACK_WORDS:
+            continue
+        if lowered in subject_tokens and kept_words:
+            continue
+        kept_words.append(word)
+        if len(kept_words) == 5:
+            break
+
+    if len(kept_words) < 3:
+        claim_words = [
+            word
+            for word in re.findall(r"[A-Za-z0-9]+", claim)
+            if word.lower() not in CLAIM_KEY_PHRASE_FALLBACK_WORDS
+        ]
+        kept_words = claim_words[:5]
+
+    return _normalize_key_phrase(" ".join(kept_words) or claim)
+
+
+def _normalize_key_phrase(raw_phrase: str) -> str:
+    words = re.findall(r"[A-Za-z0-9]+", raw_phrase)
+    cleaned = " ".join(words[:5]).strip()
+    return cleaned or "official claim"
+
+
+def _extract_response_text(response: Any) -> str:
+    output_text = getattr(response, "output_text", None)
+    if output_text:
+        return str(output_text).strip()
+
+    try:
+        return str(response.output[0].content[0].text).strip()  # type: ignore[index]
+    except Exception:
+        return ""
 
 
 def _sse_event(event_name: str, payload: Dict[str, Any]) -> str:

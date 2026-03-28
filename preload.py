@@ -29,9 +29,9 @@ PRELOAD_SUBJECTS = [
         "Grab claims it offers the most affordable and transparent pricing for rides in Southeast Asia",
     ),
     (
-        "Government",
-        "Singapore",
-        "Singapore claims to be the least corrupt country in Asia",
+        "Entertainment",
+        "Disney Cruise",
+        "Disney cruise is hyped as a dream destination by Disney and influencers",
     ),
     (
         "Government",

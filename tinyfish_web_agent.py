@@ -1,9 +1,9 @@
 from __future__ import annotations
+import time
 
 import json
 import os
 import sqlite3
-import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from typing import Any, Dict, Iterable, Iterator, List, Optional
@@ -79,7 +79,6 @@ class TinyFishWebAgentClient:
         feature_flags: Optional[Dict[str, Any]] = None,
         use_vault: bool = False,
         credential_item_ids: Optional[List[str]] = None,
-        request_timeout_seconds: int = 300,
     ) -> Iterator[Dict[str, Any]]:
         payload = self._build_payload(
             url=url,
@@ -104,7 +103,7 @@ class TinyFishWebAgentClient:
         )
 
         try:
-            with request.urlopen(req, timeout=request_timeout_seconds) as response:
+            with request.urlopen(req) as response:
                 buffer: List[str] = []
                 for raw_line in response:
                     line = raw_line.decode("utf-8", errors="replace").rstrip("\r\n")
@@ -140,16 +139,11 @@ class TinyFishWebAgentClient:
         run_ids: List[str],
         *,
         poll_interval_seconds: int = 10,
-        timeout_seconds: int = 300,
     ) -> List[Dict[str, Any]]:
         pending = set(run_ids)
         results: Dict[str, Dict[str, Any]] = {}
-        deadline = time.time() + timeout_seconds
 
         while pending:
-            if time.time() > deadline:
-                raise TimeoutError(f"Timed out waiting for TinyFish runs: {sorted(pending)}")
-
             for run in self.get_runs_batch(sorted(pending)):
                 run_id = str(run.get("run_id"))
                 results[run_id] = run
@@ -245,7 +239,7 @@ class TinyFishWebAgentClient:
         req = request.Request(url, data=data, headers=headers, method=method)
 
         try:
-            with request.urlopen(req, timeout=60) as response:
+            with request.urlopen(req) as response:
                 body = response.read().decode("utf-8")
         except error.HTTPError as exc:
             body = exc.read().decode("utf-8", errors="replace")

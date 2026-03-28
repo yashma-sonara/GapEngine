@@ -9,13 +9,13 @@ from scorer import score_gap
 
 
 CATEGORY_OPTIONS: List[str] = [
-    "Entertainment",
     "Travel",
+    "Entertainment",
     "Tech",
-    "Consumer",
-    "Finance",
-    "Health",
-    "Other",
+    "Education",
+    "Government",
+    "Food and Beverage",
+    "Transport",
 ]
 
 DEMO_SUBJECTS: Dict[str, Dict[str, str]] = {
