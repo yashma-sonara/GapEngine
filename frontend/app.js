@@ -31,28 +31,29 @@ function App() {
   }
 
   function replayCachedEvents(streamEvents, finalReport) {
+    const replayEvents = selectCachedReplayEvents(streamEvents);
     clearReplayTimers();
     setEvents([]);
     setReport(null);
     setPendingReport(finalReport);
 
-    if (!streamEvents.length) {
+    if (!replayEvents.length) {
       setReport(finalReport);
       setPendingReport(null);
       return;
     }
 
-    streamEvents.forEach((streamEvent, index) => {
+    replayEvents.forEach((streamEvent, index) => {
       const timerId = window.setTimeout(() => {
         setEvents((current) => [...current, streamEvent]);
-      }, (index + 1) * 2000);
+      }, (index + 1) * 1000);
       replayTimersRef.current.push(timerId);
     });
 
     const revealTimerId = window.setTimeout(() => {
       setReport(finalReport);
       setPendingReport(null);
-    }, streamEvents.length * 2000 + 50);
+    }, replayEvents.length * 1000 + 50);
     replayTimersRef.current.push(revealTimerId);
   }
 
@@ -178,7 +179,7 @@ function App() {
                   {event.tinyfish_event && (
                     <>
                       <p><strong>{event.tinyfish_event.type || "EVENT"}</strong></p>
-                      {event.tinyfish_event.purpose && <p>{event.tinyfish_event.purpose}</p>}
+                      <TinyFishEventDetails tinyfishEvent={event.tinyfish_event} />
                       {event.tinyfish_event.streaming_url && (
                         <a href={event.tinyfish_event.streaming_url} target="_blank" rel="noreferrer">Open browser stream</a>
                       )}
@@ -285,6 +286,21 @@ function EvidenceList({ items, placeholder = "Evidence cards will appear here af
   ));
 }
 
+function TinyFishEventDetails({ tinyfishEvent }) {
+  const detailLines = formatTinyFishEventDetails(tinyfishEvent);
+  if (!detailLines.length) return null;
+  return detailLines.map((line, index) => <p key={index}>{line}</p>);
+}
+
+function selectCachedReplayEvents(streamEvents) {
+  if (!Array.isArray(streamEvents) || !streamEvents.length) return [];
+  if (streamEvents.length <= 11) return streamEvents;
+
+  const firstEvents = streamEvents.slice(0, 5);
+  const lastEvents = streamEvents.slice(-6);
+  return [...firstEvents, ...lastEvents];
+}
+
 function parseSseChunk(chunk) {
   const lines = chunk.split("\n");
   let event = "message";
@@ -299,6 +315,71 @@ function parseSseChunk(chunk) {
   } catch {
     return null;
   }
+}
+
+function formatTinyFishEventDetails(tinyfishEvent) {
+  const detailSources = [
+    tinyfishEvent.purpose,
+    tinyfishEvent.result,
+    tinyfishEvent.raw,
+  ];
+
+  for (const source of detailSources) {
+    const lines = formatTinyFishValue(source);
+    if (lines.length) return lines;
+  }
+
+  const remainingLines = Object.entries(tinyfishEvent)
+    .filter(([key, value]) => key !== "type" && key !== "streaming_url" && value != null && value !== "")
+    .flatMap(([key, value]) => formatTinyFishValue(value, toLabel(key)));
+  return remainingLines.slice(0, 12);
+}
+
+function formatTinyFishValue(value, label = "") {
+  if (value == null || value === "") return [];
+
+  if (typeof value === "string") {
+    const parsed = tryParseJson(value);
+    if (parsed !== null) return formatTinyFishValue(parsed, label);
+    return [label ? `${label}: ${cleanText(value)}` : cleanText(value)];
+  }
+
+  if (Array.isArray(value)) {
+    return value.flatMap((item) => formatTinyFishValue(item, label)).slice(0, 12);
+  }
+
+  if (typeof value === "object") {
+    return Object.entries(value)
+      .flatMap(([key, nestedValue]) => formatTinyFishValue(nestedValue, label ? `${label} ${toLabel(key)}` : toLabel(key)))
+      .slice(0, 12);
+  }
+
+  return [label ? `${label}: ${String(value)}` : String(value)];
+}
+
+function tryParseJson(value) {
+  const trimmed = value.trim();
+  if (!trimmed || !["{", "["].includes(trimmed[0])) return null;
+  try {
+    return JSON.parse(trimmed);
+  } catch {
+    return null;
+  }
+}
+
+function cleanText(value) {
+  return value
+    .replace(/[{}[\]"]/g, "")
+    .replace(/_/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function toLabel(value) {
+  return String(value)
+    .replace(/_/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function bucketGap(score) {

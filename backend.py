@@ -335,7 +335,7 @@ async def _run_source_scan_async(
             subject=subject,
             claim_or_question=claim_or_question,
         )
-        url = f"https://www.google.com/search?q={quote_plus(query)}"
+        url = f"https://duckduckgo.com/?q={quote_plus(query)}"
         return _fallback_section(
             stage=stage,
             query=query,
@@ -365,7 +365,7 @@ def _run_source_scan_blocking(
         claim_or_question=claim_or_question,
         claim_key_phrase=claim_key_phrase,
     )
-    url = f"https://www.google.com/search?q={quote_plus(query)}"
+    url = f"https://duckduckgo.com/?q={quote_plus(query)}"
     goal = _goal(
         stage=stage,
         category=category,
@@ -437,7 +437,7 @@ def _task_result_or_fallback(
         subject=payload.subject,
         claim_or_question=payload.claim_or_question,
     )
-    fallback_url = f"https://www.google.com/search?q={quote_plus(query)}"
+    fallback_url = f"https://duckduckgo.com/?q={quote_plus(query)}"
 
     if task.cancelled():
         return _fallback_section(
@@ -537,11 +537,12 @@ def _goal(
         key_phrase = claim_key_phrase or _claim_key_phrase(subject, claim_or_question)
         return (
             f"Research official public sources for {subject} in the {category} category. "
+            "Start from DuckDuckGo search results. "
             f"Search for official pages, press releases, or statements from {subject} that are specifically about {key_phrase}. "
             "Ignore careers pages, job listings, investor relations pages, and unrelated product pages. "
             f"Focus on direct brand claims and support for the claim: {claim_or_question}. "
             f"Return at most {_official_claim_limit(preload_mode)} concise items with titles, snippets, and links. "
-            "If a page is blocked, empty, or too slow, fall back to the Google search snippet text instead of retrying the page."
+            "If a page is blocked, empty, or too slow, fall back to the DuckDuckGo search snippet text instead of retrying the page."
         )
 
     trusted_domains = list(TRUSTED_INDEPENDENT_DOMAINS)
@@ -549,10 +550,11 @@ def _goal(
     trusted = ", ".join(trusted_domains)
     return (
         f"Research independent public sources about {subject} in the {category} category. "
+        "Start from DuckDuckGo search results. "
         f"Only use these trusted domains: {trusted}. "
         f"Focus on public reviews, forum discussions, complaints, and product quality signals relevant to: {claim_or_question}. "
         f"Return at most {_independent_signal_limit(preload_mode)} concise items with titles, snippets, links, and negative or mixed signal hints. "
-        "If a page is blocked, empty, or too slow, fall back to the Google search snippet text instead of retrying the page."
+        "If a page is blocked, empty, or too slow, fall back to the DuckDuckGo search snippet text instead of retrying the page."
     )
 
 
@@ -573,7 +575,7 @@ def _result_to_items(
             {
                 "title": "No structured result returned",
                 "url": fallback_url,
-                "snippet": "TinyFish completed without a parseable result payload. Google search snippet fallback should be used for demo backup.",
+                "snippet": "TinyFish completed without a parseable result payload. DuckDuckGo search snippet fallback should be used for demo backup.",
                 "source": SOURCE_BUCKETS[stage],
             }
         ]
