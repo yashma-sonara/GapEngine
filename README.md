@@ -28,12 +28,6 @@ Then open [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 The backend serves the frontend and streams TinyFish events live over SSE.
 
-### Category-aware source plans
-
-- `Tech`, `Consumer`, `Finance`, `Health`, `Other`: Company Careers Page, LinkedIn Company Page, Google News / Search, Reddit
-- `Travel`: Official Site, Booking.com, Google Reviews / Search, Reddit
-- fallback categories: Official Site, Google Reviews / Search, Reddit
-
 ### Test TinyFish directly from the terminal
 
 Use [tinyfish_cli_test.py](C:/Users/yashm/GapEngine/tinyfish_cli_test.py) to send a project-style prompt straight to TinyFish and print streamed events in the console:
@@ -43,20 +37,6 @@ Use [tinyfish_cli_test.py](C:/Users/yashm/GapEngine/tinyfish_cli_test.py) to sen
 ```
 
 You can swap the URL and goal for any similar test prompt.
-
-### Test the same GapEngine prompt flow from the terminal
-
-Use [gapengine_test_prompt.py](C:/Users/yashm/GapEngine/gapengine_test_prompt.py) to generate the same category-aware TinyFish prompts as the app:
-
-```powershell
-.\.venv\Scripts\python.exe gapengine_test_prompt.py --category "Tech" --subject "Scale AI" --claim "Hiring aggressively"
-```
-
-Travel example:
-
-```powershell
-.\.venv\Scripts\python.exe gapengine_test_prompt.py --category "Travel" --subject "Disney Cruise" --claim "Is it worth the price?"
-```
 
 ## TinyFish Web Agent integration
 

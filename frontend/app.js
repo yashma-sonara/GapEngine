@@ -207,7 +207,7 @@ function App() {
             </div>
           ))}
           {!Object.values(report?.source_sections || {}).length && (
-            <p className="muted">Each category uses a tight public-source mix, like careers plus LinkedIn for companies or Booking.com for travel.</p>
+            <p className="muted">Each public source scan will appear here: careers, LinkedIn, Google News/Search, and Reddit.</p>
           )}
         </div>
       </section>
