@@ -1,0 +1,1435 @@
+{
+  "result": {
+    "gap_score": 2,
+    "verdict": "Likely worth it",
+    "trust_statement": "The claim appears well-supported by the evidence reviewed, with only a small credibility gap. Gap score: 2/10.",
+    "dimension_scores": {
+      "Claim Frequency": 2,
+      "Signal Strength": 2,
+      "Recency": 0,
+      "Severity": 0,
+      "Consistency": 5
+    },
+    "official_claims": [
+      "Official sources for Grab emphasize the value proposition around 'Grab claims it offers the most affordable and transparent pricing'.",
+      "Official signal: {\"brand_claims\": [{\"title\": \"Fares and Pricing - Marketplace Principles\", \"snippet\": \"Grab outlines the principles of its dynamic pricing sy.",
+      "Transport marketing language is being compared against off-platform feedback."
+    ],
+    "independent_signals": [
+      "Independent signal: {\"research\": [{\"source\": \"Trustpilot: Grab Customer Reviews\", \"title\": \"Grab Reviews | Read Customer Service Reviews of grab.com\", \"snippet\".",
+      "Reviews, forums, and blogs are weighted as counter-evidence in the gap score.",
+      "The stronger and more repeated the complaints, the higher the risk score climbs."
+    ],
+    "bullets": [
+      "Compared official messaging and independent reviews for Grab.",
+      "Question tested: Grab claims it offers the most affordable and transparent pricing",
+      "Five-dimension average produced a 2/10 gap score."
+    ],
+    "model_note": "OpenAI API unavailable, so GapEngine used a deterministic fallback scorer."
+  },
+  "evidence": {
+    "official_sources": {
+      "label": "Official sources",
+      "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Official sources",
+          "url": "https://duckduckgo.com/?q=%22Grab%22+%22the+affordable+and+transparent+pricing%22+site%3Agrab.com",
+          "snippet": "{\"brand_claims\": [{\"title\": \"Fares and Pricing - Marketplace Principles\", \"snippet\": \"Grab outlines the principles of its dynamic pricing system, emphasizing a commitment to \\\"fair fares\\\" that balance affordability for passengers with sustainable earnings for driver-partners through real-time supply and demand management.\", \"link\": \"https://www.grab.com/sg/inside-grab/marketplace-principles/fares-and-pricing/\"}, {\"title\": \"Why and how do ride fares on Grab change with time?\", \"snippet\": \"Grab e",
+          "source": "Official sources"
+        }
+      ]
+    },
+    "independent_sources": {
+      "label": "Independent sources",
+      "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Independent sources",
+          "url": "https://duckduckgo.com/?q=%22Grab%22+Transport+%22Grab+claims+it+offers+the+most+affordable+and+transparent+pricing%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+          "snippet": "{\"research\": [{\"source\": \"Trustpilot: Grab Customer Reviews\", \"title\": \"Grab Reviews | Read Customer Service Reviews of grab.com\", \"snippet\": \"Grab maintains a \\\"Bad\\\" rating (1.3/5 stars). Reviewers frequently complain about \\\"exorbitant fees,\\\" \\\"high surge pricing,\\\" and \\\"hidden charges\\\" that appear after booking.\", \"link\": \"https://www.trustpilot.com/review/grab.com\", \"signal\": \"Negative/Mixed Signal\", \"details\": \"Users highlight a lack of transparency in how final fares are calculated and",
+          "source": "Independent sources"
+        }
+      ]
+    },
+    "source_sections": {
+      "official_sources": {
+        "key": "official_sources",
+        "label": "Official sources",
+        "query": "\"Grab\" \"the affordable and transparent pricing\" site:grab.com",
+        "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+        "items": [
+          {
+            "title": "Official sources",
+            "url": "https://duckduckgo.com/?q=%22Grab%22+%22the+affordable+and+transparent+pricing%22+site%3Agrab.com",
+            "snippet": "{\"brand_claims\": [{\"title\": \"Fares and Pricing - Marketplace Principles\", \"snippet\": \"Grab outlines the principles of its dynamic pricing system, emphasizing a commitment to \\\"fair fares\\\" that balance affordability for passengers with sustainable earnings for driver-partners through real-time supply and demand management.\", \"link\": \"https://www.grab.com/sg/inside-grab/marketplace-principles/fares-and-pricing/\"}, {\"title\": \"Why and how do ride fares on Grab change with time?\", \"snippet\": \"Grab e",
+            "source": "Official sources"
+          }
+        ],
+        "raw_result": {
+          "brand_claims": [
+            {
+              "title": "Fares and Pricing - Marketplace Principles",
+              "snippet": "Grab outlines the principles of its dynamic pricing system, emphasizing a commitment to \"fair fares\" that balance affordability for passengers with sustainable earnings for driver-partners through real-time supply and demand management.",
+              "link": "https://www.grab.com/sg/inside-grab/marketplace-principles/fares-and-pricing/"
+            },
+            {
+              "title": "Why and how do ride fares on Grab change with time?",
+              "snippet": "Grab explains how dynamic pricing works, stating that \"Fair prices are about balancing affordability and reliability.\" The brand provides transparency by detailing the factors\u2014such as weather, traffic, and high demand\u2014that influence fare adjustments to ensure consistent service.",
+              "link": "https://www.grab.com/sg/inside-grab/stories/why-and-how-do-ride-fares-on-grab-change-with-time/"
+            },
+            {
+              "title": "An overview of Grab's marketplace",
+              "snippet": "This official overview describes the components and principles designed to serve Grab's multi-sided platform, focusing on creating a balanced ecosystem where pricing is structured to maintain affordability and transparency for all stakeholders.",
+              "link": "https://www.grab.com/sg/inside-grab/stories/an-overview-of-grabs-marketplace/"
+            }
+          ]
+        }
+      },
+      "independent_sources": {
+        "key": "independent_sources",
+        "label": "Independent sources",
+        "query": "\"Grab\" Transport \"Grab claims it offers the most affordable and transparent pricing\" (site:old.reddit.com OR site:trustpilot.com OR site:tripadvisor.com OR site:glassdoor.com OR site:g2.com OR site:wirecutter.com OR site:consumerreports.org)",
+        "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+        "items": [
+          {
+            "title": "Independent sources",
+            "url": "https://duckduckgo.com/?q=%22Grab%22+Transport+%22Grab+claims+it+offers+the+most+affordable+and+transparent+pricing%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+            "snippet": "{\"research\": [{\"source\": \"Trustpilot: Grab Customer Reviews\", \"title\": \"Grab Reviews | Read Customer Service Reviews of grab.com\", \"snippet\": \"Grab maintains a \\\"Bad\\\" rating (1.3/5 stars). Reviewers frequently complain about \\\"exorbitant fees,\\\" \\\"high surge pricing,\\\" and \\\"hidden charges\\\" that appear after booking.\", \"link\": \"https://www.trustpilot.com/review/grab.com\", \"signal\": \"Negative/Mixed Signal\", \"details\": \"Users highlight a lack of transparency in how final fares are calculated and",
+            "source": "Independent sources"
+          }
+        ],
+        "raw_result": {
+          "research": [
+            {
+              "source": "Trustpilot: Grab Customer Reviews",
+              "title": "Grab Reviews | Read Customer Service Reviews of grab.com",
+              "snippet": "Grab maintains a \"Bad\" rating (1.3/5 stars). Reviewers frequently complain about \"exorbitant fees,\" \"high surge pricing,\" and \"hidden charges\" that appear after booking.",
+              "link": "https://www.trustpilot.com/review/grab.com",
+              "signal": "Negative/Mixed Signal",
+              "details": "Users highlight a lack of transparency in how final fares are calculated and report that customer service rarely resolves pricing disputes or \"overcharging\" errors."
+            },
+            {
+              "source": "Tripadvisor Manila Forum: Grab vs. Taxi Pricing",
+              "title": "Why taxi is cheaper than a car on Grab?",
+              "snippet": "Travelers in the Philippines note that \"GrabCar\" (private vehicle) rates are consistently higher than metered street taxis or Grab's own \"GrabTaxi\" service, even after accounting for booking fees.",
+              "link": "https://www.tripadvisor.com/ShowTopic-g298573-i3261-k14145907-Why_taxi_is_cheaper_than_a_car_on_Grab-Manila_Metro_Manila_Luzon.html",
+              "signal": "Negative/Mixed Signal",
+              "details": "While users value the safety and fixed-price transparency of Grab, they explicitly challenge the \"most affordable\" claim by pointing out that traditional metered taxis remain a cheaper transport option."
+            },
+            {
+              "source": "Tripadvisor Phuket Forum: Ride-Hailing Competition",
+              "title": "Airport Transport-taxi or Grab?",
+              "snippet": "Discussions regarding transport in Phuket reveal that Grab fares have become similar to local \"taxi cartels\" due to exclusive terminal access deals. Competitors such as Bolt and InDrive are cited as more affordable alternatives.",
+              "link": "https://www.tripadvisor.com/ShowTopic-g293920-i5037-k15283985-Airport_Transport_taxi_or_Grab-Phuket.html",
+              "signal": "Negative/Mixed Signal",
+              "details": "Mixed feedback suggests Grab is losing its \"affordable\" edge to newer market entrants, with pricing sometimes inflated by local transport monopolies."
+            }
+          ]
+        }
+      }
+    },
+    "meta": {
+      "category": "Transport",
+      "subject": "Grab",
+      "claim_or_question": "Grab claims it offers the most affordable and transparent pricing",
+      "source": "tinyfish-sse"
+    }
+  },
+  "source_sections": {
+    "official_sources": {
+      "key": "official_sources",
+      "label": "Official sources",
+      "query": "\"Grab\" \"the affordable and transparent pricing\" site:grab.com",
+      "summary": "TinyFish finished scanning Official sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Official sources",
+          "url": "https://duckduckgo.com/?q=%22Grab%22+%22the+affordable+and+transparent+pricing%22+site%3Agrab.com",
+          "snippet": "{\"brand_claims\": [{\"title\": \"Fares and Pricing - Marketplace Principles\", \"snippet\": \"Grab outlines the principles of its dynamic pricing system, emphasizing a commitment to \\\"fair fares\\\" that balance affordability for passengers with sustainable earnings for driver-partners through real-time supply and demand management.\", \"link\": \"https://www.grab.com/sg/inside-grab/marketplace-principles/fares-and-pricing/\"}, {\"title\": \"Why and how do ride fares on Grab change with time?\", \"snippet\": \"Grab e",
+          "source": "Official sources"
+        }
+      ],
+      "raw_result": {
+        "brand_claims": [
+          {
+            "title": "Fares and Pricing - Marketplace Principles",
+            "snippet": "Grab outlines the principles of its dynamic pricing system, emphasizing a commitment to \"fair fares\" that balance affordability for passengers with sustainable earnings for driver-partners through real-time supply and demand management.",
+            "link": "https://www.grab.com/sg/inside-grab/marketplace-principles/fares-and-pricing/"
+          },
+          {
+            "title": "Why and how do ride fares on Grab change with time?",
+            "snippet": "Grab explains how dynamic pricing works, stating that \"Fair prices are about balancing affordability and reliability.\" The brand provides transparency by detailing the factors\u2014such as weather, traffic, and high demand\u2014that influence fare adjustments to ensure consistent service.",
+            "link": "https://www.grab.com/sg/inside-grab/stories/why-and-how-do-ride-fares-on-grab-change-with-time/"
+          },
+          {
+            "title": "An overview of Grab's marketplace",
+            "snippet": "This official overview describes the components and principles designed to serve Grab's multi-sided platform, focusing on creating a balanced ecosystem where pricing is structured to maintain affordability and transparency for all stakeholders.",
+            "link": "https://www.grab.com/sg/inside-grab/stories/an-overview-of-grabs-marketplace/"
+          }
+        ]
+      }
+    },
+    "independent_sources": {
+      "key": "independent_sources",
+      "label": "Independent sources",
+      "query": "\"Grab\" Transport \"Grab claims it offers the most affordable and transparent pricing\" (site:old.reddit.com OR site:trustpilot.com OR site:tripadvisor.com OR site:glassdoor.com OR site:g2.com OR site:wirecutter.com OR site:consumerreports.org)",
+      "summary": "TinyFish finished scanning Independent sources and returned structured evidence.",
+      "items": [
+        {
+          "title": "Independent sources",
+          "url": "https://duckduckgo.com/?q=%22Grab%22+Transport+%22Grab+claims+it+offers+the+most+affordable+and+transparent+pricing%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+          "snippet": "{\"research\": [{\"source\": \"Trustpilot: Grab Customer Reviews\", \"title\": \"Grab Reviews | Read Customer Service Reviews of grab.com\", \"snippet\": \"Grab maintains a \\\"Bad\\\" rating (1.3/5 stars). Reviewers frequently complain about \\\"exorbitant fees,\\\" \\\"high surge pricing,\\\" and \\\"hidden charges\\\" that appear after booking.\", \"link\": \"https://www.trustpilot.com/review/grab.com\", \"signal\": \"Negative/Mixed Signal\", \"details\": \"Users highlight a lack of transparency in how final fares are calculated and",
+          "source": "Independent sources"
+        }
+      ],
+      "raw_result": {
+        "research": [
+          {
+            "source": "Trustpilot: Grab Customer Reviews",
+            "title": "Grab Reviews | Read Customer Service Reviews of grab.com",
+            "snippet": "Grab maintains a \"Bad\" rating (1.3/5 stars). Reviewers frequently complain about \"exorbitant fees,\" \"high surge pricing,\" and \"hidden charges\" that appear after booking.",
+            "link": "https://www.trustpilot.com/review/grab.com",
+            "signal": "Negative/Mixed Signal",
+            "details": "Users highlight a lack of transparency in how final fares are calculated and report that customer service rarely resolves pricing disputes or \"overcharging\" errors."
+          },
+          {
+            "source": "Tripadvisor Manila Forum: Grab vs. Taxi Pricing",
+            "title": "Why taxi is cheaper than a car on Grab?",
+            "snippet": "Travelers in the Philippines note that \"GrabCar\" (private vehicle) rates are consistently higher than metered street taxis or Grab's own \"GrabTaxi\" service, even after accounting for booking fees.",
+            "link": "https://www.tripadvisor.com/ShowTopic-g298573-i3261-k14145907-Why_taxi_is_cheaper_than_a_car_on_Grab-Manila_Metro_Manila_Luzon.html",
+            "signal": "Negative/Mixed Signal",
+            "details": "While users value the safety and fixed-price transparency of Grab, they explicitly challenge the \"most affordable\" claim by pointing out that traditional metered taxis remain a cheaper transport option."
+          },
+          {
+            "source": "Tripadvisor Phuket Forum: Ride-Hailing Competition",
+            "title": "Airport Transport-taxi or Grab?",
+            "snippet": "Discussions regarding transport in Phuket reveal that Grab fares have become similar to local \"taxi cartels\" due to exclusive terminal access deals. Competitors such as Bolt and InDrive are cited as more affordable alternatives.",
+            "link": "https://www.tripadvisor.com/ShowTopic-g293920-i5037-k15283985-Airport_Transport_taxi_or_Grab-Phuket.html",
+            "signal": "Negative/Mixed Signal",
+            "details": "Mixed feedback suggests Grab is losing its \"affordable\" edge to newer market entrants, with pricing sometimes inflated by local transport monopolies."
+          }
+        ]
+      }
+    }
+  },
+  "low_signal": true,
+  "stream_events": [
+    {
+      "kind": "stage",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "message": "Checking trusted review and forum domains for independent signals."
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "STARTED",
+        "run_id": "c60a9d64-3be1-48c2-9ff1-b6a6a6572af1",
+        "timestamp": "2026-03-28T07:14:49.921Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:15:05.026Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "STREAMING_URL",
+        "run_id": "c60a9d64-3be1-48c2-9ff1-b6a6a6572af1",
+        "streaming_url": "https://ip-52-53-245-245.tetra-data.production.tinyfish.io/tf-ee288a70-ba2f-4507-8955-139bcf2f7fd0/stream/0",
+        "timestamp": "2026-03-28T07:15:00.117Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "c60a9d64-3be1-48c2-9ff1-b6a6a6572af1",
+        "purpose": "Visit DuckDuckGo search results for Grab transport pricing reviews.",
+        "timestamp": "2026-03-28T07:15:03.693Z"
+      }
+    },
+    {
+      "kind": "stage",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "message": "Checking official sources for direct brand claims and hiring posture."
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "STARTED",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "timestamp": "2026-03-28T07:15:22.268Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:15:24.315Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "c60a9d64-3be1-48c2-9ff1-b6a6a6572af1",
+        "purpose": "Extract search results for Grab transport pricing.",
+        "timestamp": "2026-03-28T07:15:19.566Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "c60a9d64-3be1-48c2-9ff1-b6a6a6572af1",
+        "purpose": "Relax the search query to find relevant reviews.",
+        "timestamp": "2026-03-28T07:15:25.784Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:15:37.268Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "STREAMING_URL",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "streaming_url": "https://ip-54-193-71-175.tetra-data.production.tinyfish.io/tf-b5072823-24f4-4c39-9934-d831cba7c6b2/stream/0",
+        "timestamp": "2026-03-28T07:15:31.585Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Visit DuckDuckGo search results for Grab pricing.",
+        "timestamp": "2026-03-28T07:15:34.199Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "c60a9d64-3be1-48c2-9ff1-b6a6a6572af1",
+        "purpose": "Submit the search query.",
+        "timestamp": "2026-03-28T07:15:32.652Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for a broader query to find Grab pricing info.",
+        "timestamp": "2026-03-28T07:15:40.314Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "c60a9d64-3be1-48c2-9ff1-b6a6a6572af1",
+        "purpose": "Extract search results for the updated Grab transport pricing query.",
+        "timestamp": "2026-03-28T07:15:40.627Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Submit the search for Grab pricing.",
+        "timestamp": "2026-03-28T07:15:45.309Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Extract search result titles, snippets, and links.",
+        "timestamp": "2026-03-28T07:15:49.584Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "c60a9d64-3be1-48c2-9ff1-b6a6a6572af1",
+        "purpose": "Visit Trustpilot reviews for Grab.",
+        "timestamp": "2026-03-28T07:15:52.803Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for transparent pricing on grab.com",
+        "timestamp": "2026-03-28T07:15:55.213Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for Grab transparent pricing without site restriction.",
+        "timestamp": "2026-03-28T07:16:01.245Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "c60a9d64-3be1-48c2-9ff1-b6a6a6572af1",
+        "purpose": "Visit Tripadvisor forum to understand Grab vs Taxi pricing.",
+        "timestamp": "2026-03-28T07:16:02.804Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Submit search for \"Grab transparent pricing\"",
+        "timestamp": "2026-03-28T07:16:11.091Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "c60a9d64-3be1-48c2-9ff1-b6a6a6572af1",
+        "purpose": "Extract details from Tripadvisor forum topic about Grab pricing.",
+        "timestamp": "2026-03-28T07:16:14.324Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Refine search for Grab pricing on their site.",
+        "timestamp": "2026-03-28T07:16:15.941Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for Grab affordable pricing on their site.",
+        "timestamp": "2026-03-28T07:16:20.710Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "c60a9d64-3be1-48c2-9ff1-b6a6a6572af1",
+        "purpose": "Visit Tripadvisor Phuket forum about Grab vs Taxi.",
+        "timestamp": "2026-03-28T07:16:25.065Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the specific claim about Grab pricing.",
+        "timestamp": "2026-03-28T07:16:27.743Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the exact phrase on Grab's site or elsewhere.",
+        "timestamp": "2026-03-28T07:16:32.070Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "c60a9d64-3be1-48c2-9ff1-b6a6a6572af1",
+        "purpose": "Search Reddit for Grab transport pricing reviews.",
+        "timestamp": "2026-03-28T07:16:33.144Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for Grab transport affordable pricing on their site.",
+        "timestamp": "2026-03-28T07:16:37.162Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for Grab's own blog or news about transparent pricing.",
+        "timestamp": "2026-03-28T07:16:42.501Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the claim directly.",
+        "timestamp": "2026-03-28T07:16:47.129Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:16:53.826Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for affordable pricing on Grab site.",
+        "timestamp": "2026-03-28T07:16:52.152Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "COMPLETE",
+        "run_id": "c60a9d64-3be1-48c2-9ff1-b6a6a6572af1",
+        "status": "COMPLETED",
+        "timestamp": "2026-03-28T07:16:53.998Z",
+        "result": {
+          "research": [
+            {
+              "source": "Trustpilot: Grab Customer Reviews",
+              "title": "Grab Reviews | Read Customer Service Reviews of grab.com",
+              "snippet": "Grab maintains a \"Bad\" rating (1.3/5 stars). Reviewers frequently complain about \"exorbitant fees,\" \"high surge pricing,\" and \"hidden charges\" that appear after booking.",
+              "link": "https://www.trustpilot.com/review/grab.com",
+              "signal": "Negative/Mixed Signal",
+              "details": "Users highlight a lack of transparency in how final fares are calculated and report that customer service rarely resolves pricing disputes or \"overcharging\" errors."
+            },
+            {
+              "source": "Tripadvisor Manila Forum: Grab vs. Taxi Pricing",
+              "title": "Why taxi is cheaper than a car on Grab?",
+              "snippet": "Travelers in the Philippines note that \"GrabCar\" (private vehicle) rates are consistently higher than metered street taxis or Grab's own \"GrabTaxi\" service, even after accounting for booking fees.",
+              "link": "https://www.tripadvisor.com/ShowTopic-g298573-i3261-k14145907-Why_taxi_is_cheaper_than_a_car_on_Grab-Manila_Metro_Manila_Luzon.html",
+              "signal": "Negative/Mixed Signal",
+              "details": "While users value the safety and fixed-price transparency of Grab, they explicitly challenge the \"most affordable\" claim by pointing out that traditional metered taxis remain a cheaper transport option."
+            },
+            {
+              "source": "Tripadvisor Phuket Forum: Ride-Hailing Competition",
+              "title": "Airport Transport-taxi or Grab?",
+              "snippet": "Discussions regarding transport in Phuket reveal that Grab fares have become similar to local \"taxi cartels\" due to exclusive terminal access deals. Competitors such as Bolt and InDrive are cited as more affordable alternatives.",
+              "link": "https://www.tripadvisor.com/ShowTopic-g293920-i5037-k15283985-Airport_Transport_taxi_or_Grab-Phuket.html",
+              "signal": "Negative/Mixed Signal",
+              "details": "Mixed feedback suggests Grab is losing its \"affordable\" edge to newer market entrants, with pricing sometimes inflated by local transport monopolies."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for Grab transport pricing on their site.",
+        "timestamp": "2026-03-28T07:16:58.442Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for Grab affordable transport pricing on their site.",
+        "timestamp": "2026-03-28T07:17:02.839Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the exact phrase on Grab site.",
+        "timestamp": "2026-03-28T07:17:08.125Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Submit the refined search for Grab pricing.",
+        "timestamp": "2026-03-28T07:17:12.482Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "independent_sources",
+      "label": "Independent sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:17:18.145Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for pricing on Grab's site.",
+        "timestamp": "2026-03-28T07:17:17.096Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Try the search without quotes.",
+        "timestamp": "2026-03-28T07:17:20.898Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search without quotes to find relevant Grab pages.",
+        "timestamp": "2026-03-28T07:17:26.460Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Check search results for Grab pricing.",
+        "timestamp": "2026-03-28T07:17:31.221Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Click the suggested search without quotes.",
+        "timestamp": "2026-03-28T07:17:37.647Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for pricing transparency on Grab site.",
+        "timestamp": "2026-03-28T07:17:42.400Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the exact phrase without site restriction.",
+        "timestamp": "2026-03-28T07:17:46.603Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the phrase on Grab's blog.",
+        "timestamp": "2026-03-28T07:17:50.934Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Submit search for Grab blog pricing info.",
+        "timestamp": "2026-03-28T07:17:56.176Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Check for Grab blog search results.",
+        "timestamp": "2026-03-28T07:18:00.515Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for fair and transparent pricing for Grab.",
+        "timestamp": "2026-03-28T07:18:06.425Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for transparency on Grab site.",
+        "timestamp": "2026-03-28T07:18:10.779Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for Grab transparent pricing transport.",
+        "timestamp": "2026-03-28T07:18:15.662Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for upfront pricing on Grab site.",
+        "timestamp": "2026-03-28T07:18:20.365Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for Grab transparent pricing.",
+        "timestamp": "2026-03-28T07:18:24.179Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the phrase \"affordable and transparent pricing\" for Grab.",
+        "timestamp": "2026-03-28T07:18:30.268Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Submit the search for the phrase.",
+        "timestamp": "2026-03-28T07:18:34.366Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the phrase without quotes.",
+        "timestamp": "2026-03-28T07:18:38.856Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for transparent fares on Grab site.",
+        "timestamp": "2026-03-28T07:18:43.690Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the phrase without quotes.",
+        "timestamp": "2026-03-28T07:18:47.357Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "List search results to find Grab site links.",
+        "timestamp": "2026-03-28T07:18:52.993Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for Grab transport affordable and transparent pricing.",
+        "timestamp": "2026-03-28T07:19:00.218Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the phrase without quotes to find more results.",
+        "timestamp": "2026-03-28T07:19:05.316Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for pricing on Grab Singapore site.",
+        "timestamp": "2026-03-28T07:19:13.037Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for pricing on all of Grab site.",
+        "timestamp": "2026-03-28T07:19:19.085Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the phrase without quotes to find more results.",
+        "timestamp": "2026-03-28T07:19:23.061Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for Grab fixed fare and transparent pricing.",
+        "timestamp": "2026-03-28T07:19:29.013Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for affordable and transparent on Grab site.",
+        "timestamp": "2026-03-28T07:19:33.207Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the phrase without quotes to find more results.",
+        "timestamp": "2026-03-28T07:19:38.471Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for affordable on Grab site.",
+        "timestamp": "2026-03-28T07:19:46.052Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for Grab fixed fares and affordable transport.",
+        "timestamp": "2026-03-28T07:19:51.234Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for Grab blog on transparent pricing.",
+        "timestamp": "2026-03-28T07:19:56.565Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for affordable on Grab site.",
+        "timestamp": "2026-03-28T07:20:01.731Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for Grab pricing transparency.",
+        "timestamp": "2026-03-28T07:20:08.749Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for transparent pricing on Grab Malaysia site.",
+        "timestamp": "2026-03-28T07:20:13.309Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the specific blog post title.",
+        "timestamp": "2026-03-28T07:20:18.737Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the suspected blog post title.",
+        "timestamp": "2026-03-28T07:20:24.321Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Check search results for the specific blog title.",
+        "timestamp": "2026-03-28T07:20:27.997Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the blog title without quotes.",
+        "timestamp": "2026-03-28T07:20:32.951Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Visit the search results for the blog title without quotes.",
+        "timestamp": "2026-03-28T07:20:38.374Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Visit Grab's official page on fares and pricing.",
+        "timestamp": "2026-03-28T07:20:47.361Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Extract Grab's claims about affordable and transparent pricing.",
+        "timestamp": "2026-03-28T07:20:56.467Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Check for affordable and transparent pricing claims in this blog post.",
+        "timestamp": "2026-03-28T07:21:03.263Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Extract pricing claims from the current Grab blog post.",
+        "timestamp": "2026-03-28T07:21:12.492Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search the Grab Newsroom for pricing information.",
+        "timestamp": "2026-03-28T07:21:19.283Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Open the menu to navigate to the Newsroom.",
+        "timestamp": "2026-03-28T07:21:25.063Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Open menu to find Newsroom.",
+        "timestamp": "2026-03-28T07:21:30.110Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Visit Grab Newsroom to find more pricing claims.",
+        "timestamp": "2026-03-28T07:21:36.015Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Check for pricing-related press releases.",
+        "timestamp": "2026-03-28T07:21:44.845Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Visit Inside Grab blog to find more pricing stories.",
+        "timestamp": "2026-03-28T07:21:54.211Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search the Inside Grab blog for pricing.",
+        "timestamp": "2026-03-28T07:22:01.620Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search specifically for the \"affordable and transparent\" claim.",
+        "timestamp": "2026-03-28T07:22:10.236Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:22:29.487Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for transparent pricing on Grab site.",
+        "timestamp": "2026-03-28T07:22:25.812Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Check for transparency claims in the surge pricing blog post.",
+        "timestamp": "2026-03-28T07:22:34.074Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for transparency on Grab site.",
+        "timestamp": "2026-03-28T07:22:43.230Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Open menu to find Inside Grab.",
+        "timestamp": "2026-03-28T07:22:48.237Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Go to the Inside Grab blog main page.",
+        "timestamp": "2026-03-28T07:22:56.560Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search for the claim on Grab's internal search.",
+        "timestamp": "2026-03-28T07:23:03.801Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Visit Inside Grab to find a third official pricing source.",
+        "timestamp": "2026-03-28T07:23:08.040Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Search the Inside Grab blog for transparent pricing.",
+        "timestamp": "2026-03-28T07:23:18.761Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Explore marketplace principles for more pricing claims.",
+        "timestamp": "2026-03-28T07:23:23.015Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Visit Marketplace Principles landing page for transparency claims.",
+        "timestamp": "2026-03-28T07:23:28.618Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "PROGRESS",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "purpose": "Extract final snippets for the 3 items.",
+        "timestamp": "2026-03-28T07:23:39.907Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:24:01.433Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "COMPLETE",
+        "run_id": "ca83935a-dfbd-4e32-88e3-a5bf27639bd6",
+        "status": "COMPLETED",
+        "timestamp": "2026-03-28T07:23:53.436Z",
+        "result": {
+          "brand_claims": [
+            {
+              "title": "Fares and Pricing - Marketplace Principles",
+              "snippet": "Grab outlines the principles of its dynamic pricing system, emphasizing a commitment to \"fair fares\" that balance affordability for passengers with sustainable earnings for driver-partners through real-time supply and demand management.",
+              "link": "https://www.grab.com/sg/inside-grab/marketplace-principles/fares-and-pricing/"
+            },
+            {
+              "title": "Why and how do ride fares on Grab change with time?",
+              "snippet": "Grab explains how dynamic pricing works, stating that \"Fair prices are about balancing affordability and reliability.\" The brand provides transparency by detailing the factors\u2014such as weather, traffic, and high demand\u2014that influence fare adjustments to ensure consistent service.",
+              "link": "https://www.grab.com/sg/inside-grab/stories/why-and-how-do-ride-fares-on-grab-change-with-time/"
+            },
+            {
+              "title": "An overview of Grab's marketplace",
+              "snippet": "This official overview describes the components and principles designed to serve Grab's multi-sided platform, focusing on creating a balanced ecosystem where pricing is structured to maintain affordability and transparency for all stakeholders.",
+              "link": "https://www.grab.com/sg/inside-grab/stories/an-overview-of-grabs-marketplace/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:24:20.214Z"
+      }
+    },
+    {
+      "kind": "tinyfish_event",
+      "stage": "official_sources",
+      "label": "Official sources",
+      "tinyfish_event": {
+        "type": "HEARTBEAT",
+        "timestamp": "2026-03-28T07:24:36.742Z"
+      }
+    }
+  ]
+}
