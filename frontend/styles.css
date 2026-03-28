@@ -6,6 +6,8 @@
   --muted: #9db0c7;
   --accent: #5ef2c8;
   --accent-2: #7bb8ff;
+  --warm: #ffd36a;
+  --danger: #ff8a8a;
   --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
 }
 
@@ -78,6 +80,70 @@ textarea { resize: vertical; }
   background: radial-gradient(circle, rgba(8,17,31,1) 56%, transparent 58%), conic-gradient(var(--accent) 0 72%, rgba(255,255,255,0.08) 72% 100%);
   box-shadow: inset 0 0 28px rgba(94, 242, 200, 0.15);
 }
+.verdict-hero {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+}
+.verdict-good {
+  background: linear-gradient(135deg, rgba(94,242,200,0.16), rgba(94,242,200,0.04));
+  border-color: rgba(94,242,200,0.26);
+}
+.verdict-mixed {
+  background: linear-gradient(135deg, rgba(255,211,106,0.16), rgba(255,211,106,0.04));
+  border-color: rgba(255,211,106,0.24);
+}
+.verdict-risky {
+  background: linear-gradient(135deg, rgba(255,138,138,0.16), rgba(255,138,138,0.04));
+  border-color: rgba(255,138,138,0.24);
+}
+.verdict-copy { flex: 1; }
+.verdict-kicker {
+  margin: 0 0 6px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.verdict-headline {
+  margin: 0 0 8px;
+  font-size: 1.55rem;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+.verdict-text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(244,247,251,0.9);
+}
+.verdict-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+.verdict-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.85rem;
+  color: var(--text);
+}
+.verdict-badge-soft {
+  background: rgba(6,12,24,0.34);
+  color: var(--muted);
+}
 .score-ring span { font-size: 2rem; font-weight: 700; }
 .bars { display: grid; gap: 14px; margin-top: 20px; }
 .bar-track { height: 12px; overflow: hidden; border-radius: 999px; background: rgba(255,255,255,0.07); }
@@ -88,4 +154,5 @@ textarea { resize: vertical; }
 @media (max-width: 920px) {
   .hero,.grid,.form-grid,.timeline-item,.source-grid { grid-template-columns: 1fr; }
   .hero-orb { justify-self: start; }
+  .verdict-hero { grid-template-columns: 1fr; }
 }
