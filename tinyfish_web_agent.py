@@ -79,6 +79,7 @@ class TinyFishWebAgentClient:
         feature_flags: Optional[Dict[str, Any]] = None,
         use_vault: bool = False,
         credential_item_ids: Optional[List[str]] = None,
+        request_timeout_seconds: int = 300,
     ) -> Iterator[Dict[str, Any]]:
         payload = self._build_payload(
             url=url,
@@ -103,7 +104,7 @@ class TinyFishWebAgentClient:
         )
 
         try:
-            with request.urlopen(req, timeout=300) as response:
+            with request.urlopen(req, timeout=request_timeout_seconds) as response:
                 buffer: List[str] = []
                 for raw_line in response:
                     line = raw_line.decode("utf-8", errors="replace").rstrip("\r\n")

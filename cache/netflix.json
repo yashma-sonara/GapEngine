@@ -1,0 +1,126 @@
+{
+  "result": {
+    "gap_score": 2,
+    "verdict": "Likely worth it",
+    "dimension_scores": {
+      "Claim Frequency": 2,
+      "Signal Strength": 0,
+      "Recency": 2,
+      "Severity": 0,
+      "Consistency": 4
+    },
+    "official_claims": [
+      "Official sources for Netflix emphasize the value proposition around 'Has Netflix's content quality declined since they lost subscribers?'.",
+      "Official signal: Timed out before TinyFish returned structured evidence..",
+      "Entertainment marketing language is being compared against off-platform feedback."
+    ],
+    "independent_signals": [
+      "Independent signal: Timed out before TinyFish returned structured evidence..",
+      "Reviews, forums, and blogs are weighted as counter-evidence in the gap score.",
+      "The stronger and more repeated the complaints, the higher the risk score climbs."
+    ],
+    "bullets": [
+      "Compared official messaging and independent reviews for Netflix.",
+      "Question tested: Has Netflix's content quality declined since they lost subscribers?",
+      "Five-dimension average produced a 2/10 gap score."
+    ],
+    "model_note": "OpenAI API unavailable, so GapEngine used a deterministic fallback scorer."
+  },
+  "evidence": {
+    "official_sources": {
+      "label": "Official sources",
+      "summary": "Official sources fallback used: Timed out before TinyFish returned structured evidence.",
+      "items": [
+        {
+          "title": "Fallback search for Official sources",
+          "url": "https://www.google.com/search?q=%22Netflix%22+Entertainment+%22Has+Netflix%27s+content+quality+declined+since+they+lost+subscribers%3F%22+%28site%3Anetflix.com+OR+site%3Alinkedin.com%2Fcompany+OR+site%3Anetflix.com%2Fcareers+OR+site%3Anetflix.com%2Fjobs+OR+site%3Anetflix.com%2Fnews%29",
+          "snippet": "Timed out before TinyFish returned structured evidence.",
+          "source": "Official sources"
+        }
+      ]
+    },
+    "independent_sources": {
+      "label": "Independent sources",
+      "summary": "Independent sources fallback used: Timed out before TinyFish returned structured evidence.",
+      "items": [
+        {
+          "title": "Fallback search for Independent sources",
+          "url": "https://www.google.com/search?q=%22Netflix%22+Entertainment+%22Has+Netflix%27s+content+quality+declined+since+they+lost+subscribers%3F%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+          "snippet": "Timed out before TinyFish returned structured evidence.",
+          "source": "Independent sources"
+        }
+      ]
+    },
+    "source_sections": {
+      "official_sources": {
+        "key": "official_sources",
+        "label": "Official sources",
+        "query": "\"Netflix\" Entertainment \"Has Netflix's content quality declined since they lost subscribers?\" (site:netflix.com OR site:linkedin.com/company OR site:netflix.com/careers OR site:netflix.com/jobs OR site:netflix.com/news)",
+        "summary": "Official sources fallback used: Timed out before TinyFish returned structured evidence.",
+        "items": [
+          {
+            "title": "Fallback search for Official sources",
+            "url": "https://www.google.com/search?q=%22Netflix%22+Entertainment+%22Has+Netflix%27s+content+quality+declined+since+they+lost+subscribers%3F%22+%28site%3Anetflix.com+OR+site%3Alinkedin.com%2Fcompany+OR+site%3Anetflix.com%2Fcareers+OR+site%3Anetflix.com%2Fjobs+OR+site%3Anetflix.com%2Fnews%29",
+            "snippet": "Timed out before TinyFish returned structured evidence.",
+            "source": "Official sources"
+          }
+        ],
+        "raw_result": null
+      },
+      "independent_sources": {
+        "key": "independent_sources",
+        "label": "Independent sources",
+        "query": "\"Netflix\" Entertainment \"Has Netflix's content quality declined since they lost subscribers?\" (site:old.reddit.com OR site:trustpilot.com OR site:tripadvisor.com OR site:glassdoor.com OR site:g2.com OR site:wirecutter.com OR site:consumerreports.org)",
+        "summary": "Independent sources fallback used: Timed out before TinyFish returned structured evidence.",
+        "items": [
+          {
+            "title": "Fallback search for Independent sources",
+            "url": "https://www.google.com/search?q=%22Netflix%22+Entertainment+%22Has+Netflix%27s+content+quality+declined+since+they+lost+subscribers%3F%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+            "snippet": "Timed out before TinyFish returned structured evidence.",
+            "source": "Independent sources"
+          }
+        ],
+        "raw_result": null
+      }
+    },
+    "meta": {
+      "category": "Entertainment",
+      "subject": "Netflix",
+      "claim_or_question": "Has Netflix's content quality declined since they lost subscribers?",
+      "source": "tinyfish-sse"
+    }
+  },
+  "source_sections": {
+    "official_sources": {
+      "key": "official_sources",
+      "label": "Official sources",
+      "query": "\"Netflix\" Entertainment \"Has Netflix's content quality declined since they lost subscribers?\" (site:netflix.com OR site:linkedin.com/company OR site:netflix.com/careers OR site:netflix.com/jobs OR site:netflix.com/news)",
+      "summary": "Official sources fallback used: Timed out before TinyFish returned structured evidence.",
+      "items": [
+        {
+          "title": "Fallback search for Official sources",
+          "url": "https://www.google.com/search?q=%22Netflix%22+Entertainment+%22Has+Netflix%27s+content+quality+declined+since+they+lost+subscribers%3F%22+%28site%3Anetflix.com+OR+site%3Alinkedin.com%2Fcompany+OR+site%3Anetflix.com%2Fcareers+OR+site%3Anetflix.com%2Fjobs+OR+site%3Anetflix.com%2Fnews%29",
+          "snippet": "Timed out before TinyFish returned structured evidence.",
+          "source": "Official sources"
+        }
+      ],
+      "raw_result": null
+    },
+    "independent_sources": {
+      "key": "independent_sources",
+      "label": "Independent sources",
+      "query": "\"Netflix\" Entertainment \"Has Netflix's content quality declined since they lost subscribers?\" (site:old.reddit.com OR site:trustpilot.com OR site:tripadvisor.com OR site:glassdoor.com OR site:g2.com OR site:wirecutter.com OR site:consumerreports.org)",
+      "summary": "Independent sources fallback used: Timed out before TinyFish returned structured evidence.",
+      "items": [
+        {
+          "title": "Fallback search for Independent sources",
+          "url": "https://www.google.com/search?q=%22Netflix%22+Entertainment+%22Has+Netflix%27s+content+quality+declined+since+they+lost+subscribers%3F%22+%28site%3Aold.reddit.com+OR+site%3Atrustpilot.com+OR+site%3Atripadvisor.com+OR+site%3Aglassdoor.com+OR+site%3Ag2.com+OR+site%3Awirecutter.com+OR+site%3Aconsumerreports.org%29",
+          "snippet": "Timed out before TinyFish returned structured evidence.",
+          "source": "Independent sources"
+        }
+      ],
+      "raw_result": null
+    }
+  },
+  "low_signal": true
+}

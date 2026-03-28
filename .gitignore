@@ -5,3 +5,4 @@ __pycache__/
 *.pyc
 tinyfish_results.db
 .streamlit/secrets.toml
+node_modules
