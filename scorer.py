@@ -100,6 +100,7 @@ Interpretation:
     return {
         "gap_score": gap_score,
         "verdict": _normalize_verdict(parsed.get("verdict"), gap_score),
+        "trust_statement": _trust_statement(_normalize_verdict(parsed.get("verdict"), gap_score), gap_score),
         "dimension_scores": dimension_scores,
         "official_claims": _normalize_list(parsed.get("official_claims"), fallback="Official messaging highlighted benefits and value."),
         "independent_signals": _normalize_list(parsed.get("independent_signals"), fallback="Independent reporting was limited or mixed."),
@@ -142,6 +143,7 @@ def _heuristic_score(category: str, subject: str, claim_or_question: str, eviden
     return {
         "gap_score": gap_score,
         "verdict": verdict,
+        "trust_statement": _trust_statement(verdict, gap_score),
         "dimension_scores": dimension_scores,
         "official_claims": [
             f"Official sources for {subject} emphasize the value proposition around '{claim_or_question}'.",
@@ -207,6 +209,14 @@ def _normalize_verdict(raw: Any, gap_score: int) -> str:
     if gap_score <= 6:
         return "Mixed signals"
     return "Buyer beware"
+
+
+def _trust_statement(verdict: str, gap_score: int) -> str:
+    if verdict == "Likely worth it":
+        return f"The claim appears well-supported by the evidence reviewed, with only a small credibility gap. Gap score: {gap_score}/10."
+    if verdict == "Mixed signals":
+        return f"The claim is only partially supported. Public evidence points in both directions, so it should be treated with caution. Gap score: {gap_score}/10."
+    return f"The claim does not look strongly supported by the current evidence, and the credibility gap is high. Gap score: {gap_score}/10."
 
 
 def _section_signal(label: str, section: Dict[str, Any]) -> str:

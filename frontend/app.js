@@ -202,11 +202,16 @@ function App() {
           )}
           {report && (
             <>
-              <div className="score-row">
+              <div className={`verdict-hero verdict-${bucketGap(report.result.gap_score)}`}>
                 <div className="score-ring"><span>{report.result.gap_score}</span><small>/ 10</small></div>
-                <div>
-                  <p className="verdict">{report.result.verdict}</p>
-                  <p className="muted">Five dimensions averaged into one credibility gap score.</p>
+                <div className="verdict-copy">
+                  <p className="verdict-kicker">Claim Read</p>
+                  <h3 className="verdict-headline">{verdictHeadline(report.result.gap_score)}</h3>
+                  <p className="verdict-text">{verdictExplanation(report.result.gap_score, report.result.verdict)}</p>
+                  <div className="verdict-badges">
+                    <span className="verdict-badge">{report.result.verdict}</span>
+                    <span className="verdict-badge verdict-badge-soft">Trust signal</span>
+                  </div>
                 </div>
               </div>
               <div className="bars">
@@ -294,6 +299,28 @@ function parseSseChunk(chunk) {
   } catch {
     return null;
   }
+}
+
+function bucketGap(score) {
+  if (score <= 3) return "good";
+  if (score <= 6) return "mixed";
+  return "risky";
+}
+
+function verdictHeadline(score) {
+  if (score <= 3) return "The claim looks supported.";
+  if (score <= 6) return "The claim has mixed support.";
+  return "The claim looks overstated.";
+}
+
+function verdictExplanation(score, verdict) {
+  if (score <= 3) {
+    return "Official messaging and independent signals mostly line up, so the claim appears credible from what was found.";
+  }
+  if (score <= 6) {
+    return "Some evidence supports the claim, but there are enough contradictions or gaps that it should not be taken at face value.";
+  }
+  return "Independent evidence meaningfully diverges from the official story, so this claim should be treated with caution.";
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
